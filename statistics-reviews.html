@@ -508,10 +508,10 @@
 
 
                         <div class="row">
-                            <div class="col-lg-5">
+                            <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="header-title mb-3">Statistics</h4>
+                                        <h4 class="header-title mb-1">Statistics</h4>
                                         <div class="total-reviews-box">
                                             <span class="total-reviews-box-title">New Reviews Today</span>
                                             <strong class="total-reviews-box-num">1</strong>
@@ -522,70 +522,7 @@
                                 <!-- end card -->
                                 <div class="card">
                                     <div class="card-body">
-                                        <div class="d-flex justify-content-between">
-                                            <h4 class="header-title mb-4">Answered Reviews</h4>
-                                            <div>
-                                                <i class="dripicons-information" data-toggle="tooltip"
-                                                   data-placement="bottom" title="based on content analysis"></i>
-                                            </div>
-                                        </div> <!-- end .d-flex-->
-                                        <p style="text-align:center;">Your response rate is <strong>70,9% </strong> <i
-                                                class="uil-smile"></i></p>
-                                        <div id="answered-reviews" class="apex-charts"></div>
-                                    </div>
-                                    <!-- end card body-->
-                                </div>
-                                <!-- end card -->
-
-                            </div>
-                            <!-- end col-->
-
-
-                            <div class="col-lg-7">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between">
-                                            <h4 class="header-title mb-4">Reviews Distribution</h4>
-                                            <div>
-                                                <i class="dripicons-information" data-toggle="tooltip"
-                                                   data-placement="bottom" title="based on content analysis"></i>
-                                            </div>
-                                        </div> <!-- end .d-flex-->
-                                        <div id="reviews-distribution" class="apex-charts"></div>
-                                    </div>
-                                    <!-- end card body-->
-                                </div>
-                                <!-- end card -->
-                            </div>
-                            <!-- end col-->
-
-
-                        </div>
-                        <!-- end row-->
-
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="card">
-                                    <div class="card-body">
-
-                                        <h4 class="header-title mb-1">Review languages</h4>
-
-                                        <div class="donut-container text-center" style="width: 100%;"
-                                             data-colors="#878FF6,#2ED6A6,#FA748F,#FFC626,#4AA09F,#F59344"></div>
-                                        <div class="legend-chart-container text-center"></div>
-
-                                    </div>
-                                    <!-- end card body-->
-                                </div>
-                                <!-- end card -->
-                            </div>
-                            <!-- end col-->
-
-
-                            <div class="col-lg-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="header-title mb-4">Ratings by platforms</h4>
+                                        <h4 class="header-title mb-3">Ratings by platforms</h4>
                                         <div class="table-responsive">
                                             <table class="table rating-table table-sm table-borderless table-centered mb-1">
                                                 <thead>
@@ -609,7 +546,7 @@
                                                            style="font-size: 1.1rem;"></i>
                                                         <i class="mdi mdi-star text-warning"
                                                            style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star-outline text-warning"
+                                                        <i class="mdi mdi-star-half-full text-warning"
                                                            style="font-size: 1.1rem;"></i>
                                                     </td>
                                                 </tr>
@@ -626,13 +563,155 @@
                                                            style="font-size: 1.1rem;"></i>
                                                         <i class="mdi mdi-star text-warning"
                                                            style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star-outline text-warning"
+                                                        <i class="mdi mdi-star-half-full text-warning"
                                                            style="font-size: 1.1rem;"></i>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Lunchgate</td>
-                                                    <td>849</td>
+                                                    <td>Tripadvisor</td>
+                                                    <td>511</td>
+                                                    <td class="text-nowrap">
+                                                        <span class="month-avg">4.1</span>
+                                                        <i class="mdi mdi-star text-warning"
+                                                           style="font-size: 1.1rem;"></i>
+                                                        <i class="mdi mdi-star text-warning"
+                                                           style="font-size: 1.1rem;"></i>
+                                                        <i class="mdi mdi-star text-warning"
+                                                           style="font-size: 1.1rem;"></i>
+                                                        <i class="mdi mdi-star text-warning"
+                                                           style="font-size: 1.1rem;"></i>
+                                                        <i class="mdi mdi-star-outline text-warning"
+                                                           style="font-size: 1.1rem;"></i>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div> <!-- end table-responsive-->
+                                        <!--<div id="rating-source" class="apex-charts"
+                                             data-colors="#D32323,#3B5998,#00AF87,#EA5A1C,#FBBC05"></div>-->
+                                        <div id="rating-source-all" class="apex-charts"></div>
+                                    </div>
+                                    <!-- end card body-->
+                                </div>
+                                <!-- end card -->
+
+                            </div>
+                            <!-- end col-->
+
+
+                            <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="header-title mb-4">Reviews Distribution</h4>
+                                            <div>
+                                                <i class="dripicons-information" data-toggle="tooltip"
+                                                   data-placement="bottom" title="based on content analysis"></i>
+                                            </div>
+                                        </div> <!-- end .d-flex-->
+                                        <div id="reviews-distribution" class="apex-charts"></div>
+                                    </div>
+                                    <!-- end card body-->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <!-- end col-->
+
+
+                        </div>
+                        <!-- end row-->
+
+
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                <div class="card">
+                                    <div class="card-body">
+
+                                        <h4 class="header-title mb-4">Ratings Trend By Platforms</h4>
+                                        <div id="ranking-platforms-trend-all" class="apex-charts"></div>
+
+
+                                    </div>
+                                    <!-- end card body-->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <!-- end col-->
+
+
+                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="header-title mb-4">Platform Ratings By Categories</h4>
+                                        <div id="radar-chart-platforms-all" class="apex-charts"></div>
+
+                                    </div>
+                                    <!-- end card body-->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <!-- end col-->
+                        </div>
+                        <!-- end row-->
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                <div class="card">
+                                    <div class="card-body">
+
+                                        <h4 class="header-title mb-1">Review languages</h4>
+
+                                        <div id="review-language" class="apex-charts"></div>
+
+                                        <!--<div class="donut-container text-center" style="width: 100%;"
+                                             data-colors="#878FF6,#2ED6A6,#FA748F,#FFC626,#4AA09F,#F59344"></div>
+                                        <div class="legend-chart-container text-center"></div>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>-->
+
+
+                                    </div>
+                                    <!-- end card body-->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <!-- end col-->
+
+
+                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="header-title mb-3">Ratings by Languages</h4>
+                                        <div class="table-responsive">
+                                            <table class="table rating-table table-sm table-borderless table-centered mb-0">
+                                                <thead>
+                                                <tr>
+                                                    <th>Language</th>
+                                                    <th style="width: 30%;">Total reviews</th>
+                                                    <th style="width: 30%;">Average rating</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>German</td>
+                                                    <td>614</td>
+                                                    <td class="text-nowrap">
+                                                        <span class="month-avg">4.5</span>
+                                                        <i class="mdi mdi-star text-warning"
+                                                           style="font-size: 1.1rem;"></i>
+                                                        <i class="mdi mdi-star text-warning"
+                                                           style="font-size: 1.1rem;"></i>
+                                                        <i class="mdi mdi-star text-warning"
+                                                           style="font-size: 1.1rem;"></i>
+                                                        <i class="mdi mdi-star text-warning"
+                                                           style="font-size: 1.1rem;"></i>
+                                                        <i class="mdi mdi-star-half-full text-warning"
+                                                           style="font-size: 1.1rem;"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>English</td>
+                                                    <td>100</td>
                                                     <td class="text-nowrap">
                                                         <span class="month-avg">4.2</span>
                                                         <i class="mdi mdi-star text-warning"
@@ -648,8 +727,8 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Tripadvisor</td>
-                                                    <td>511</td>
+                                                    <td>French</td>
+                                                    <td>86</td>
                                                     <td class="text-nowrap">
                                                         <span class="month-avg">4.1</span>
                                                         <i class="mdi mdi-star text-warning"
@@ -658,15 +737,32 @@
                                                            style="font-size: 1.1rem;"></i>
                                                         <i class="mdi mdi-star text-warning"
                                                            style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star-outline text-warning"
+                                                        <i class="mdi mdi-star text-warning"
                                                            style="font-size: 1.1rem;"></i>
                                                         <i class="mdi mdi-star-outline text-warning"
                                                            style="font-size: 1.1rem;"></i>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Yelp</td>
-                                                    <td>37</td>
+                                                    <td>Dutch</td>
+                                                    <td>90</td>
+                                                    <td class="text-nowrap">
+                                                        <span class="month-avg">4.0</span>
+                                                        <i class="mdi mdi-star text-warning"
+                                                           style="font-size: 1.1rem;"></i>
+                                                        <i class="mdi mdi-star text-warning"
+                                                           style="font-size: 1.1rem;"></i>
+                                                        <i class="mdi mdi-star text-warning"
+                                                           style="font-size: 1.1rem;"></i>
+                                                        <i class="mdi mdi-star text-warning"
+                                                           style="font-size: 1.1rem;"></i>
+                                                        <i class="mdi mdi-star-outline text-warning"
+                                                           style="font-size: 1.1rem;"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Other</td>
+                                                    <td>75</td>
                                                     <td class="text-nowrap">
                                                         <span class="month-avg">3.9</span>
                                                         <i class="mdi mdi-star text-warning"
@@ -675,7 +771,24 @@
                                                            style="font-size: 1.1rem;"></i>
                                                         <i class="mdi mdi-star text-warning"
                                                            style="font-size: 1.1rem;"></i>
+                                                        <i class="mdi mdi-star text-warning"
+                                                           style="font-size: 1.1rem;"></i>
                                                         <i class="mdi mdi-star-outline text-warning"
+                                                           style="font-size: 1.1rem;"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Italian</td>
+                                                    <td>35</td>
+                                                    <td class="text-nowrap">
+                                                        <span class="month-avg">3.6</span>
+                                                        <i class="mdi mdi-star text-warning"
+                                                           style="font-size: 1.1rem;"></i>
+                                                        <i class="mdi mdi-star text-warning"
+                                                           style="font-size: 1.1rem;"></i>
+                                                        <i class="mdi mdi-star text-warning"
+                                                           style="font-size: 1.1rem;"></i>
+                                                        <i class="mdi mdi-star-half-full text-warning"
                                                            style="font-size: 1.1rem;"></i>
                                                         <i class="mdi mdi-star-outline text-warning"
                                                            style="font-size: 1.1rem;"></i>
@@ -684,11 +797,10 @@
                                                 </tbody>
                                             </table>
                                         </div> <!-- end table-responsive-->
-                                        <div id="rating-source" class="apex-charts"
-                                             data-colors="#D32323,#3B5998,#00AF87,#EA5A1C,#FBBC05"></div>
                                         <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
                                         <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
-
+                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                        <!--<div id="rating-languages-all" class="apex-charts"></div>-->
                                     </div>
                                     <!-- end card body-->
                                 </div>
@@ -844,6 +956,10 @@
         <script src="assets/js/pages/reviews-distribution.js"></script>
         <script src="assets/js/pages/test.js"></script>
         <script src="assets/js/pages/review-language.js"></script>
+        <script src="assets/js/pages/radar-chart-platforms-all.js"></script>
+        <script src="assets/js/pages/ranking-platforms-trend-all.js"></script>
+        <script src="assets/js/pages/rating-source-all.js"></script>
+        <script src="assets/js/pages/rating-languages-all.js"></script>
 
         <!-- <script src="https://apexcharts.com/samples/assets/stock-prices.js"></script> -->
         <!-- <script src="https://apexcharts.com/samples/assets/irregular-data-series.js"></script> -->

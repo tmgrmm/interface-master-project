@@ -1,8 +1,9 @@
 var options = {
     series: [{
         name: 'Rating',
-        data: [4.2, 4.8, 3.1, 3.8, 3.5, 2.9],
+        data: [4.2, 4.8, 3.1, 3.8, 3.5, 2.9]
     }],
+    labels: ['Meals', 'Location', 'Price', 'Features', 'Ambiance', 'Service'],
     chart: { toolbar: {
             show: false
         },

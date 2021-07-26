@@ -16,7 +16,7 @@ var options = {
       show: false
     },
     type: 'area',
-    height: 480,
+    height: 492,
     stacked: true,
     events: {
       selection: function (chart, e) {

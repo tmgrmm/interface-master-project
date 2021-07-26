@@ -1,23 +1,27 @@
 var options = {
     series: [{
-            name: "Bon Appétit",
-            data: [27, 25, 22, 21, 20, 22]
+        name: "Google",
+        data: [4.2, 4.8, 3.1, 3.8, 3.5, 2.9]
+    },
+        {
+            name: "TripAdvisor",
+            data: [3, 3.2, 4.1, 3.6, 4, 4]
         },
-            {
-                name: "Cardinal",
-                data: [40,43,45,44,40,39]
-            }
-        ],
+        {
+            name: "Facebook",
+            data: [4.6, 4.1, 4.5, 4.8, 4.6, 4.3]
+        }
+    ],
         chart: {toolbar: {
                 show: false
             },
-            height: 250,
+            height: 350,
             type: 'line',
             zoom: {
                 enabled: false
             },
         },
-        colors: ['#00b0db','#00e396','#ffb01a', '#ff4560','#775cd0','#D3D3D3'],
+        colors: ['#00b0db','#00e396','#ffb01a'],
         dataLabels: {
             enabled: false
         },
@@ -66,5 +70,5 @@ var options = {
         }
     };
 
-var chart = new ApexCharts(document.querySelector("#rankingTrendComparison-2"),options);
+var chart = new ApexCharts(document.querySelector("#ranking-platforms-trend-all"),options);
 chart.render();

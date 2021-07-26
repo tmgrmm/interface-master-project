@@ -26,6 +26,7 @@ var options = {
             }
         }
     },
+    colors: ['#00b0db','#00e396','#ffb01a', '#ff4560'],
     labels: ['Total 90/127','Positive 40/68', 'Neutral 23/32', 'Negative 27/27'],
     legend: {
         show: true,

@@ -29,6 +29,7 @@ var options = {
             enabled: false
         },
     },
+    colors: ['#00b0db','#00e396','#ffb01a', '#ff4560','#775cd0','#D3D3D3'],
     dataLabels: {
         enabled: false
     },

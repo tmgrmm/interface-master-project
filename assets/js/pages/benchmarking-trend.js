@@ -18,6 +18,7 @@ var options = {
             },
         }
     },
+    colors: ['#00b0db'],
     dataLabels: {
         enabled: true,
         formatter: function (val) {
