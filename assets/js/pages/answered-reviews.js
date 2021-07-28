@@ -7,6 +7,7 @@ var options = {
     },
     plotOptions: {
         radialBar: {
+            customScale: 2,
             dataLabels: {
                 name: {
                     fontSize: '22px',
