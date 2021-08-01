@@ -57,6 +57,7 @@
                         <li class="side-nav-item">
                             <a href="to-do.html" class="side-nav-link">
                                 <i class="uil-edit"> </i>
+                                <span class="badge badge-success float-right">4</span>
                                 <span>To-Do</span>
                             </a>
                         </li>
@@ -508,20 +509,16 @@
 
 
                         <div class="row">
-                            <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="header-title mb-1">Statistics</h4>
-                                        <div class="total-reviews-box">
-                                            <span class="total-reviews-box-title">New Reviews Today</span>
-                                            <strong class="total-reviews-box-num">1</strong>
+                                        <h4 class="header-title mb-3">Reviews and Ratings</h4>
+                                        <div id="synced-charts">
+                                            <div id="line-reviews"></div>
+                                            <div id="line-ratings"></div>
                                         </div>
-                                    </div>
-                                    <!-- end card body-->
-                                </div>
-                                <!-- end card -->
-                                <div class="card">
-                                    <div class="card-body">
+
+<!--
                                         <h4 class="header-title mb-3">Ratings by platforms</h4>
                                         <div class="table-responsive">
                                             <table class="table rating-table table-sm table-borderless table-centered mb-1">
@@ -588,8 +585,8 @@
                                             </table>
                                         </div> <!-- end table-responsive-->
                                         <!--<div id="rating-source" class="apex-charts"
-                                             data-colors="#D32323,#3B5998,#00AF87,#EA5A1C,#FBBC05"></div>-->
-                                        <div id="rating-source-all" class="apex-charts"></div>
+                                             data-colors="#D32323,#3B5998,#00AF87,#EA5A1C,#FBBC05"></div>
+                                        <div id="rating-source-all" class="apex-charts"></div>-->
                                     </div>
                                     <!-- end card body-->
                                 </div>
@@ -599,7 +596,7 @@
                             <!-- end col-->
 
 
-                            <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="d-flex justify-content-between">
@@ -624,12 +621,96 @@
 
 
                         <div class="row">
-                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="card">
                                     <div class="card-body">
+                                        <h4 class="header-title mb-1">Review Source</h4>
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                                <div id="review-platform" class="apex-charts"></div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                                <div id="rating-source-all" class="apex-charts"></div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="col-md-3 col-sm-3 col-xs-3">&nbsp; </div>
+                                                <div class="table-responsive">
+                                                    <table class="table rating-table table-sm table-borderless table-centered mb-1">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>&nbsp;</th>
+                                                            <th>Source</th>
+                                                            <th>Total reviews</th>
+                                                            <th>Average rating</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>&nbsp;</td>
+                                                            <td>Facebook</td>
+                                                            <td>177</td>
+                                                            <td class="text-nowrap">
+                                                                <span class="month-avg">4.5</span>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star-half-full text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>&nbsp;</td>
+                                                            <td>Google</td>
+                                                            <td>1014</td>
+                                                            <td class="text-nowrap">
+                                                                <span class="month-avg">4.4</span>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star-half-full text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>&nbsp;</td>
+                                                            <td>Tripadvisor</td>
+                                                            <td>511</td>
+                                                            <td class="text-nowrap">
+                                                                <span class="month-avg">4.1</span>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star-outline text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                            </td>
+                                                        </tr>
 
-                                        <h4 class="header-title mb-4">Ratings Trend By Platforms</h4>
-                                        <div id="ranking-platforms-trend-all" class="apex-charts"></div>
+                                                        </tbody>
+                                                    </table>
+                                                </div> <!-- end table-responsive-->
+                                            </div>
+                                        </div>
+
+
+
+
 
 
                                     </div>
@@ -638,177 +719,316 @@
                                 <!-- end card -->
                             </div>
                             <!-- end col-->
+                            </div>
+                            <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="header-title mb-1">Review language</h4>
+                                        <div class="row">
+
+                                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                            <div id="review-language" class="apex-charts"></div>
+                                                </div>
+
+                                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                                <div id="language-source-all" class="apex-charts"></div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" align="center">
+                                                <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                                <div class="table-responsive">
+                                                    <table class="table rating-table table-sm table-borderless table-centered mb-0">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>&nbsp;</th>
+                                                            <th>Language</th>
+                                                            <th>Total reviews</th>
+                                                            <th>Average rating</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>&nbsp;</td>
+                                                            <td>German</td>
+                                                            <td>614</td>
+                                                            <td class="text-nowrap">
+                                                                <span class="month-avg">4.5</span>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star-half-full text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>&nbsp;</td>
+                                                            <td>English</td>
+                                                            <td>100</td>
+                                                            <td class="text-nowrap">
+                                                                <span class="month-avg">4.2</span>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star-outline text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>&nbsp;</td>
+                                                            <td>French</td>
+                                                            <td>86</td>
+                                                            <td class="text-nowrap">
+                                                                <span class="month-avg">4.1</span>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star-outline text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>&nbsp;</td>
+                                                            <td>Other</td>
+                                                            <td>75</td>
+                                                            <td class="text-nowrap">
+                                                                <span class="month-avg">3.9</span>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star-outline text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>&nbsp;</td>
+                                                            <td>Italian</td>
+                                                            <td>35</td>
+                                                            <td class="text-nowrap">
+                                                                <span class="month-avg">3.6</span>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star-half-full text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star-outline text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div> <!-- end table-responsive-->
+                                            </div>
 
 
-                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                        </div>
+
+                                    </div>
+                                    <!-- end card body-->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                            <!-- end col-->
+                        </div>
+                        <!-- end row-->
+
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                                <h4 class="header-title mb-4">Ratings</h4>
+                                                    <div class="row">
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" align="center">
+                                                            <td class="text-nowrap">
+                                                                <span STYLE="font-weight:bold" class="month-avg">1.0</span>
+                                                            </td>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" align="center">
+                                                            <td class="text-nowrap">
+                                                                <span STYLE="font-weight:bold" class="month-avg">2.0</span>
+                                                            </td>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" align="center">
+                                                            <td class="text-nowrap">
+                                                                <span STYLE="font-weight:bold" class="month-avg">3.0</span>
+                                                            </td>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" align="center">
+                                                            <td class="text-nowrap">
+                                                                <span STYLE="font-weight:bold" class="month-avg">4.0</span>
+                                                            </td>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" align="center">
+                                                            <td class="text-nowrap">
+                                                                <span STYLE="font-weight:bold" class="month-avg">5.0</span>
+                                                            </td>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" align="center">
+                                                            <td class="text-nowrap">
+                                                                <span STYLE="font-weight:bold"> Average Rating </span>
+                                                            </td>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" align="center">
+                                                        <td class="text-nowrap">
+                                                            <i class="mdi mdi-star text-warning"
+                                                               style="font-size: 1.1rem;"></i>
+                                                            <i class="mdi mdi-star-outline text-warning"
+                                                               style="font-size: 1.1rem;"></i>
+                                                            <i class="mdi mdi-star-outline text-warning"
+                                                               style="font-size: 1.1rem;"></i>
+                                                            <i class="mdi mdi-star-outline text-warning"
+                                                               style="font-size: 1.1rem;"></i>
+                                                            <i class="mdi mdi-star-outline text-warning"
+                                                               style="font-size: 1.1rem;"></i>
+                                                        </td>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" align="center">
+                                                            <td class="text-nowrap">
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star-outline text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star-outline text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star-outline text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                            </td>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" align="center">
+                                                            <td class="text-nowrap">
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star-outline text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star-outline text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                            </td>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" align="center">
+                                                            <td class="text-nowrap">
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star-outline text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                            </td>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" align="center">
+                                                            <td class="text-nowrap">
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                            </td>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" align="center">
+                                                            <td class="text-nowrap">
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                                <i class="mdi mdi-star-half-full text-warning"
+                                                                   style="font-size: 1.1rem;"></i>
+                                                            </td>
+                                                        </div>
+                                                    </div>
+                                                <div class="row">
+                                                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                                                    <div id="rating-column-chart" class="apex-charts"></div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" align="center">
+                                                        <div class="table-responsive">
+                                                            <table class="table rating-table table-sm table-borderless table-centered mb-0">
+                                                                <tbody>
+                                                                <tr align="center">
+                                                                    <td class="text-nowrap">
+                                                                        <span class="month-avg">4.3</span>
+                                                                    </td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div> <!-- end table-responsive-->
+                                                    </div>
+                                                </div>
+
+
+
+
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        <!-- end row-->
+
+
+
+
+
+                           <!--<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                 <div class="card">
                                     <div class="card-body">
                                         <h4 class="header-title mb-4">Platform Ratings By Categories</h4>
                                         <div id="radar-chart-platforms-all" class="apex-charts"></div>
 
                                     </div>
-                                    <!-- end card body-->
+
                                 </div>
-                                <!-- end card -->
+
                             </div>
-                            <!-- end col-->
-                        </div>
-                        <!-- end row-->
-
-                        <div class="row">
-                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                <div class="card">
-                                    <div class="card-body">
-
-                                        <h4 class="header-title mb-1">Review languages</h4>
-
-                                        <div id="review-language" class="apex-charts"></div>
-
-                                        <!--<div class="donut-container text-center" style="width: 100%;"
-                                             data-colors="#878FF6,#2ED6A6,#FA748F,#FFC626,#4AA09F,#F59344"></div>
-                                        <div class="legend-chart-container text-center"></div>
-                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>-->
+                            -->
 
 
-                                    </div>
-                                    <!-- end card body-->
-                                </div>
-                                <!-- end card -->
-                            </div>
-                            <!-- end col-->
 
-
-                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="header-title mb-3">Ratings by Languages</h4>
-                                        <div class="table-responsive">
-                                            <table class="table rating-table table-sm table-borderless table-centered mb-0">
-                                                <thead>
-                                                <tr>
-                                                    <th>Language</th>
-                                                    <th style="width: 30%;">Total reviews</th>
-                                                    <th style="width: 30%;">Average rating</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                <tr>
-                                                    <td>German</td>
-                                                    <td>614</td>
-                                                    <td class="text-nowrap">
-                                                        <span class="month-avg">4.5</span>
-                                                        <i class="mdi mdi-star text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star-half-full text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>English</td>
-                                                    <td>100</td>
-                                                    <td class="text-nowrap">
-                                                        <span class="month-avg">4.2</span>
-                                                        <i class="mdi mdi-star text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star-outline text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>French</td>
-                                                    <td>86</td>
-                                                    <td class="text-nowrap">
-                                                        <span class="month-avg">4.1</span>
-                                                        <i class="mdi mdi-star text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star-outline text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Dutch</td>
-                                                    <td>90</td>
-                                                    <td class="text-nowrap">
-                                                        <span class="month-avg">4.0</span>
-                                                        <i class="mdi mdi-star text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star-outline text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Other</td>
-                                                    <td>75</td>
-                                                    <td class="text-nowrap">
-                                                        <span class="month-avg">3.9</span>
-                                                        <i class="mdi mdi-star text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star-outline text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Italian</td>
-                                                    <td>35</td>
-                                                    <td class="text-nowrap">
-                                                        <span class="month-avg">3.6</span>
-                                                        <i class="mdi mdi-star text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star-half-full text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                        <i class="mdi mdi-star-outline text-warning"
-                                                           style="font-size: 1.1rem;"></i>
-                                                    </td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div> <!-- end table-responsive-->
-                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
-                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
-                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
-                                        <!--<div id="rating-languages-all" class="apex-charts"></div>-->
-                                    </div>
-                                    <!-- end card body-->
-                                </div>
-                                <!-- end card -->
-                            </div>
-                            <!-- end col-->
-                        </div>
-                        <!-- end row-->
 
                     </div> <!-- container -->
 
@@ -960,6 +1180,12 @@
         <script src="assets/js/pages/ranking-platforms-trend-all.js"></script>
         <script src="assets/js/pages/rating-source-all.js"></script>
         <script src="assets/js/pages/rating-languages-all.js"></script>
+        <script src="assets/js/pages/ratings-and-reviews.js"></script>
+        <script src="assets/js/pages/review-platform.js"></script>
+        <script src="assets/js/pages/language-source-all.js"></script>
+        <script src="assets/js/pages/rating-column-chart.js"></script>
+
+
 
         <!-- <script src="https://apexcharts.com/samples/assets/stock-prices.js"></script> -->
         <!-- <script src="https://apexcharts.com/samples/assets/irregular-data-series.js"></script> -->

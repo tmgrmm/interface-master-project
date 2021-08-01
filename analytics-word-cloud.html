@@ -13,8 +13,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 
-         <!-- third party css -->
-         <link href="assets/css/vendor/britecharts.min.css" rel="stylesheet" type="text/css" />
+        <!-- third party css -->
+        <link href="assets/css/vendor/britecharts.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="bower_components/jqcloud2/dist/jqcloud.min.css">
 
         <!-- App css -->
         <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
@@ -500,11 +501,11 @@
 
 
                         <div class="row">
-                            <div class="col-lg-12">
+                            <div class="col-lg-12" align="center">
                                 <div class="card">
                                     <div class="card-body">
                                         <h4 class="header-title mb-4"></h4>
-                                        <div id="" class="apex-charts" ></div>
+                                        <div id="wordcloud">  </div>
                                     </div>
                                     <!-- end card body-->
                                 </div>
@@ -670,6 +671,66 @@
         <!-- <script src="https://apexcharts.com/samples/assets/stock-prices.js"></script> -->
         <!-- <script src="https://apexcharts.com/samples/assets/irregular-data-series.js"></script> -->
         <script src="assets/js/pages/init.apexchart.js" defer></script>
+
+        <!-- Word cloud (jqcloud2) -->
+        <script src="bower_components/jqcloud2/dist/jqcloud.min.js"></script>
+        <script src="assets/js/pages/wordcloud.js"></script>
+        <script type="text/javascript">
+            var list = [
+                "pizza",
+                "delivery",
+                "tiramisu",
+                "lunch",
+                "lake view",
+                "pasta",
+                "italian",
+                "loud",
+                "unfriendly",
+                "slow",
+                "city center",
+                "take-away",
+                "busy",
+                "vegetarian",
+                "parking",
+                "price",
+                "disappointed",
+                "impatient",
+                "wine",
+                "vegan",
+                "chef de service",
+                "expensive",
+            ];
+            var word_list=[]
+            for (var i=0; i<list.length; i++)
+                word_list.push({text:list[i], weight:(Math.random() * 4 + 10)})
+            $(document).ready(function() {
+                $("#wordcloud").jQCloud(word_list);
+            });
+        </script>
+        <style type="text/css">
+            body {
+                background: #eee;
+                font-family: Helvetica, Arial, sans-serif;
+            }
+            #wordcloud {
+                margin: 30px auto;
+                padding: 100px;
+                width: 600px;
+                height: 371px;
+                border: none;
+                overflow: visible;
+            }
+            #wordcloud span.w10, #wordcloud span.w9, #wordcloud span.w8, #wordcloud span.w7 {
+                text-shadow: 0px 1px 1px #ccc;
+            }
+            #wordcloud span.w3, #wordcloud span.w2, #wordcloud span.w1 {
+                text-shadow: 0px 1px 1px #fff;
+            }
+        </style>
+
+
+
+
 
         <!-- Brite charts js -->
         <script src="assets/js/vendor/d3.min.js" defer></script>

@@ -1,12 +1,12 @@
 var options = {
-    series: [614, 100, 86, 35, 90, 75],
-    labels: ['German', 'English', 'French', 'Italian', 'Dutch', 'Other'],
+    series: [514, 100, 86, 35, 75],
+    labels: ['German', 'English', 'French', 'Italian', 'Other'],
     chart: {
         type: 'donut',
-        height: 336
+        height: 300
     },
     xaxis: {
-        categories: ['German', 'English', 'French', 'Italian', 'Dutch', 'Other']
+        categories: ['German', 'English', 'French', 'Italian', 'Other']
     },
     plotOptions: {
         pie: {
@@ -22,7 +22,7 @@ var options = {
     dataLabels: {
         enabled: true,
         formatter: function (val) {
-            return val + '%'
+            return val.toFixed(1) + '%'
         }
     },
     colors: ['#00b0db','#00e396','#ffb01a', '#ff4560','#775cd0','#D3D3D3'],
