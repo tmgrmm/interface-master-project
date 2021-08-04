@@ -492,6 +492,14 @@
                                                 </a>
                                             </li>
                                             <li class="nav-item">
+                                                <a href="#setting-for-authors" data-toggle="tab" aria-expanded="true" class="nav-link rounded-0">
+                                                    <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                                    <i class="mdi mdi-message-text-outline font-18"></i>
+                                                    <span style="font-size: 20px" class="d-none d-lg-block">Settings for Authors</span>
+                                                    <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
                                                 <a href="#temporary-information" data-toggle="tab" aria-expanded="true" class="nav-link rounded-0">
                                                     <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
                                                     <i class="mdi  mdi-timer-sand font-18"></i>
@@ -556,103 +564,87 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <h4 class="mt-4">Food</h4>
                                                             <div class="row">
                                                                 <div class="col-12">
                                                                     <div class="form-group">
-                                                                        <label for="food-type">Type</label>
-                                                                        <input class="form-control" type="text" placeholder="Enter your type of food" id="food-type" />
+                                                                        <label for="email-address">Website:</label>
+                                                                        <input class="form-control" type="text" placeholder="Enter the website of the restaurant" id="website" />
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <div class="form-group">
-                                                                        <label for="speciality-1">Speciality 1</label>
-                                                                        <input class="form-control" type="text" placeholder="Enter a speciality" id="speciality-1" />
+                                                            <h4 class="mt-3">Location</h4>
+                                                            <form>
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <div class="form-group">
+                                                                            <label for="location">Location:</label>
+                                                                            <input class="form-control" type="text" placeholder="Enter your location" id="location" />
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <div class="form-group">
-                                                                        <label for="speciality-2">Speciality 2</label>
-                                                                        <input class="form-control" type="text" placeholder="Enter a speciality" id="speciality-2" />
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <div class="form-group">
+                                                                            <label for="reachability">Reachability:</label>
+                                                                            <input class="form-control" type="text" placeholder="Enter your reachability" id="reachability" />
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <div class="form-group">
-                                                                        <label for="speciality-3">Speciality 3</label>
-                                                                        <input class="form-control" type="text" placeholder="Enter a speciality" id="speciality-3" />
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <div class="form-group">
+                                                                            <label for="contact-person">Ambience Specialities:</label>
+                                                                            <input class="form-control" type="text" placeholder="Enter the name of the contact person" id="contact-person" />
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <div class="form-group">
-                                                                        <label for="speciality-4">Speciality 4</label>
-                                                                        <input class="form-control" type="text" placeholder="Enter a speciality" id="speciality-4" />
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <div class="custom-control custom-switch">
+                                                                            <input type="checkbox" class="custom-control-input" id="customSwitchTerrace">
+                                                                            <label class="custom-control-label" for="customSwitchTerrace">Terrace</label>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <div class="form-group">
-                                                                        <label for="speciality-5">Speciality 5</label>
-                                                                        <input class="form-control" type="text" placeholder="Enter a speciality" id="speciality-5" />
+                                                                <h4 class="mt-3">Services</h4>
+                                                                <div class="row">
+                                                                    <div class="col-6">
+                                                                        <div class="custom-control custom-switch">
+                                                                            <input type="checkbox" class="custom-control-input" id="customSwitchWiFi">
+                                                                            <label class="custom-control-label" for="customSwitchWiFi">Online Reservations possible</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-switch">
+                                                                            <input type="checkbox" class="custom-control-input" id="customSwitchResTel">
+                                                                            <label class="custom-control-label" for="customSwitchResTel">Telephone Reservations possible</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-6">
+                                                                        <div class="custom-control custom-switch">
+                                                                            <input type="checkbox" class="custom-control-input" id="customSwitchResOnl">
+                                                                            <label class="custom-control-label" for="customSwitchResOnl">WiFi</label>
+                                                                        </div>
+                                                                        <div class="custom-control custom-switch">
+                                                                            <input type="checkbox" class="custom-control-input" id="customSwitchOffGroup">
+                                                                            <label class="custom-control-label" for="customSwitchOffGroup">Group Offers</label>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <div class="form-group">
-                                                                        <label for="menu-link">Menu Link</label>
-                                                                        <input class="form-control" type="text" placeholder="Enter the link of your menu card" id="menu-link" />
+                                                                <h4 class="mt-3">Pricing</h4>
+                                                                <div class="row">
+                                                                    <div class="col-6">
+                                                                        <div class="custom-control custom-switch">
+                                                                            <input type="checkbox" class="custom-control-input" id="customSwitchTapWater">
+                                                                            <label class="custom-control-label" for="customSwitchTapWater">Free Tap Water</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-6">
+                                                                        <div class="custom-control custom-switch">
+                                                                            <input type="checkbox" class="custom-control-input" id="customSwitchHappyHour">
+                                                                            <label class="custom-control-label" for="customSwitchHappyHour">Happy Hour</label>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-6">
-                                                                    <div class="form-group">
-                                                                                <label for="menu-link">Options</label>
-                                                                                <div class="custom-control custom-switch">
-                                                                                    <input type="checkbox" class="custom-control-input" id="customSwitchLunchMenu">
-                                                                                    <label class="custom-control-label" data-on-label="Yes" for="customSwitchLunchMenu">Lunch Menu available</label>
-                                                                                </div>
-                                                                                <div class="custom-control custom-switch">
-                                                                                    <input type="checkbox" class="custom-control-input" id="customSwitchBreakfastMenu">
-                                                                                    <label class="custom-control-label" for="customSwitchBreakfastMenu">Breakfast Menu available</label>
-                                                                                </div>
-                                                                                <div class="custom-control custom-switch">
-                                                                                    <input type="checkbox" class="custom-control-input" id="customSwitchKidsMenu">
-                                                                                    <label class="custom-control-label" for="customSwitchKidsMenu">Kids Menu available</label>
-                                                                                </div>
-                                                                                <div class="custom-control custom-switch">
-                                                                                    <input type="checkbox" class="custom-control-input" id="customSwitchTakeAway">
-                                                                                    <label class="custom-control-label" for="customSwitchTakeAway">Take-Away available</label>
-                                                                                </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    <div class="form-group">
-                                                                            <label for="menu-link"></label>
-                                                                            <div class="custom-control custom-switch">
-                                                                                <input type="checkbox" class="custom-control-input" id="customSwitchDelivery">
-                                                                                <label class="custom-control-label" for="customSwitchDelivery">Delivery available</label>
-                                                                            </div>
-                                                                            <div class="custom-control custom-switch">
-                                                                                <input type="checkbox" class="custom-control-input" id="customSwitchVegetarian">
-                                                                                <label class="custom-control-label" for="customSwitchVegetarian">Vegetarian Option available</label>
-                                                                            </div>
-                                                                            <div class="custom-control custom-switch">
-                                                                                <input type="checkbox" class="custom-control-input" id="customSwitchVegan">
-                                                                                <label class="custom-control-label" for="customSwitchVegan">Vegan Option available</label>
-                                                                            </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+
 
                                                         </form>
                                                     </div>
@@ -661,214 +653,112 @@
                                                     <!-- Second Column -->
 
                                                     <div class="col-lg-6">
-                                                        <h4 class="mt-2">Location</h4>
-                                                        <form>
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <div class="form-group">
-                                                                        <label for="location">Location:</label>
-                                                                        <input class="form-control" type="text" placeholder="Enter your location" id="location" />
+                                                        <h4 class="mt-2">Food</h4>
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="form-group">
+                                                                    <label for="food-type">Type</label>
+                                                                    <input class="form-control" type="text" placeholder="Enter your type of food" id="food-type" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="form-group">
+                                                                    <label for="speciality-1">Speciality 1</label>
+                                                                    <input class="form-control" type="text" placeholder="Enter a speciality" id="speciality-1" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="form-group">
+                                                                    <label for="speciality-2">Speciality 2</label>
+                                                                    <input class="form-control" type="text" placeholder="Enter a speciality" id="speciality-2" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="form-group">
+                                                                    <label for="speciality-3">Speciality 3</label>
+                                                                    <input class="form-control" type="text" placeholder="Enter a speciality" id="speciality-3" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="form-group">
+                                                                    <label for="speciality-4">Speciality 4</label>
+                                                                    <input class="form-control" type="text" placeholder="Enter a speciality" id="speciality-4" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="form-group">
+                                                                    <label for="speciality-5">Speciality 5</label>
+                                                                    <input class="form-control" type="text" placeholder="Enter a speciality" id="speciality-5" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="form-group">
+                                                                    <label for="menu-link">Menu Link</label>
+                                                                    <input class="form-control" type="text" placeholder="Enter the link of your menu card" id="menu-link" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <div class="form-group">
+                                                                    <label for="menu-link">Options</label>
+                                                                    <div class="custom-control custom-switch">
+                                                                        <input type="checkbox" class="custom-control-input" id="customSwitchLunchMenu">
+                                                                        <label class="custom-control-label" data-on-label="Yes" for="customSwitchLunchMenu">Lunch Menu available</label>
+                                                                    </div>
+                                                                    <div class="custom-control custom-switch">
+                                                                        <input type="checkbox" class="custom-control-input" id="customSwitchBreakfastMenu">
+                                                                        <label class="custom-control-label" for="customSwitchBreakfastMenu">Breakfast Menu available</label>
+                                                                    </div>
+                                                                    <div class="custom-control custom-switch">
+                                                                        <input type="checkbox" class="custom-control-input" id="customSwitchKidsMenu">
+                                                                        <label class="custom-control-label" for="customSwitchKidsMenu">Kids Menu available</label>
+                                                                    </div>
+                                                                    <div class="custom-control custom-switch">
+                                                                        <input type="checkbox" class="custom-control-input" id="customSwitchTakeAway">
+                                                                        <label class="custom-control-label" for="customSwitchTakeAway">Take-Away available</label>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <div class="form-group">
-                                                                        <label for="reachability">Reachability:</label>
-                                                                        <input class="form-control" type="text" placeholder="Enter your reachability" id="reachability" />
+                                                            <div class="col-6">
+                                                                <div class="form-group">
+                                                                    <label for="menu-link"></label>
+                                                                    <div class="custom-control custom-switch">
+                                                                        <input type="checkbox" class="custom-control-input" id="customSwitchDelivery">
+                                                                        <label class="custom-control-label" for="customSwitchDelivery">Delivery available</label>
+                                                                    </div>
+                                                                    <div class="custom-control custom-switch">
+                                                                        <input type="checkbox" class="custom-control-input" id="customSwitchVegetarian">
+                                                                        <label class="custom-control-label" for="customSwitchVegetarian">Vegetarian Option available</label>
+                                                                    </div>
+                                                                    <div class="custom-control custom-switch">
+                                                                        <input type="checkbox" class="custom-control-input" id="customSwitchVegan">
+                                                                        <label class="custom-control-label" for="customSwitchVegan">Vegan Option available</label>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <div class="form-group">
-                                                                        <label for="contact-person">Ambience Specialities:</label>
-                                                                        <input class="form-control" type="text" placeholder="Enter the name of the contact person" id="contact-person" />
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <div class="custom-control custom-switch">
-                                                                        <input type="checkbox" class="custom-control-input" id="customSwitchTerrace">
-                                                                        <label class="custom-control-label" for="customSwitchTerrace">Terrace</label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <h4 class="mt-4">Services</h4>
-                                                            <div class="row">
-                                                                <div class="col-6">
-                                                                    <div class="custom-control custom-switch">
-                                                                        <input type="checkbox" class="custom-control-input" id="customSwitchWiFi">
-                                                                        <label class="custom-control-label" for="customSwitchWiFi">Online Reservations possible</label>
-                                                                    </div>
-                                                                    <div class="custom-control custom-switch">
-                                                                        <input type="checkbox" class="custom-control-input" id="customSwitchResTel">
-                                                                        <label class="custom-control-label" for="customSwitchResTel">Telephone Reservations possible</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    <div class="custom-control custom-switch">
-                                                                        <input type="checkbox" class="custom-control-input" id="customSwitchResOnl">
-                                                                        <label class="custom-control-label" for="customSwitchResOnl">WiFi</label>
-                                                                    </div>
-                                                                    <div class="custom-control custom-switch">
-                                                                        <input type="checkbox" class="custom-control-input" id="customSwitchOffGroup">
-                                                                        <label class="custom-control-label" for="customSwitchOffGroup">Group Offers</label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <h4 class="mt-4">Pricing</h4>
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <div class="custom-control custom-switch">
-                                                                        <input type="checkbox" class="custom-control-input" id="customSwitchTapWater">
-                                                                        <label class="custom-control-label" for="customSwitchTapWater">Free Tap Water</label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <div class="custom-control custom-switch">
-                                                                        <input type="checkbox" class="custom-control-input" id="customSwitchHappyHour">
-                                                                        <label class="custom-control-label" for="customSwitchHappyHour">Happy Hour</label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <h4 class="mt-4">Additional Information</h4>
+                                                        </div>
+
+                                                            <h4 class="mt-3">Additional Information</h4>
                                                             <p class="mt-0">(keywords to describe restaurant, words that can essentially be used in every view, special offers, etc.)</p>
                                                             <div class="row">
                                                                 <div class="col-12">
-                                                                    <textarea class="form-control" id="example-textarea" rows="5" placeholder="Write some keywords..."></textarea>
-                                                                </div>
-                                                            </div>
-                                                            <h4 class="mt-4">Settings for Authors</h4>
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <div class="custom-control custom-switch">
-                                                                        <input type="checkbox" class="custom-control-input" id="customSwitchGoogleReview">
-                                                                        <label class="custom-control-label" for="customSwitchGoogleReview">Answer Google Reviews</label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
-                                                            <div class="row">
-                                                                <div class="col-1">
-                                                                </div>
-                                                                <div class="col-11">
-                                                                    <div class="row">
-                                                                        <p class="mt-0">rating from</p>
-                                                                        <p>&nbsp;&nbsp;&nbsp;</p>
-                                                                        <div class="rateit rateit-mdi" data-rateit-mode="font" data-rateit-icon="󰓒" data-rateit-resetable="false"  data-rateit-ispreset="true"></div>
-                                                                        <p>&nbsp;&nbsp;&nbsp;</p>
-                                                                        <p class="mt-0">to</p>
-                                                                        <p>&nbsp;&nbsp;&nbsp;</p>
-                                                                        <div class="rateit rateit-mdi" data-rateit-mode="font" data-rateit-icon="󰓒" data-rateit-resetable="false"  data-rateit-ispreset="true"></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-1">
-                                                                </div>
-                                                                <div class="col-11">
-                                                                    <div class="row">
-                                                                        <p class="mt-0">also Reviews witouth Text:</p>
-                                                                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                                                                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                                                                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                                                                        <div class="custom-control custom-switch">
-                                                                            <input type="checkbox" class="custom-control-input" id="customSwitchGoogleReviewWithoutText">
-                                                                            <label class="custom-control-label" for="customSwitchGoogleReviewWithoutText"></label>
-                                                                        </div>
-                                                                    </div>
+                                                                    <textarea class="form-control" id="example-textarea" rows="8" placeholder="Write some keywords..."></textarea>
                                                                 </div>
                                                             </div>
 
-                                                            <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
-
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <div class="custom-control custom-switch">
-                                                                        <input type="checkbox" class="custom-control-input" id="customSwitchTripAdvisorReview">
-                                                                        <label class="custom-control-label" for="customSwitchTripAdvisorReview">Answer TripAdvisor Reviews</label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
-                                                            <div class="row">
-                                                                <div class="col-1">
-                                                                </div>
-                                                                <div class="col-11">
-                                                                    <div class="row">
-                                                                        <p class="mt-0">rating from</p>
-                                                                        <p>&nbsp;&nbsp;&nbsp;</p>
-                                                                        <div class="rateit rateit-mdi" data-rateit-mode="font" data-rateit-icon="󰓒" data-rateit-resetable="false"  data-rateit-ispreset="true"></div>
-                                                                        <p>&nbsp;&nbsp;&nbsp;</p>
-                                                                        <p class="mt-0">to</p>
-                                                                        <p>&nbsp;&nbsp;&nbsp;</p>
-                                                                        <div class="rateit rateit-mdi" data-rateit-mode="font" data-rateit-icon="󰓒" data-rateit-resetable="false"  data-rateit-ispreset="true"></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-1">
-                                                                </div>
-                                                                <div class="col-11">
-                                                                    <div class="row">
-                                                                        <p class="mt-0">also Reviews witouth Text:</p>
-                                                                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                                                                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                                                                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                                                                        <div class="custom-control custom-switch">
-                                                                            <input type="checkbox" class="custom-control-input" id="customSwitchTripAdvisorReviewWithoutText">
-                                                                            <label class="custom-control-label" for="customSwitchTripAdvisorReviewWithoutText"></label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
-
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <div class="custom-control custom-switch">
-                                                                        <input type="checkbox" class="custom-control-input" id="customSwitchFacebookReview">
-                                                                        <label class="custom-control-label" for="customSwitchFacebookReview">Answer Facebook Reviews</label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
-                                                            <div class="row">
-                                                                <div class="col-1">
-                                                                </div>
-                                                                <div class="col-11">
-                                                                    <div class="row">
-                                                                        <p class="mt-0">rating from</p>
-                                                                        <p>&nbsp;&nbsp;&nbsp;</p>
-                                                                        <div class="rateit rateit-mdi" data-rateit-mode="font" data-rateit-icon="󰓒" data-rateit-resetable="false"  data-rateit-ispreset="true"></div>
-                                                                        <p>&nbsp;&nbsp;&nbsp;</p>
-                                                                        <p class="mt-0">to</p>
-                                                                        <p>&nbsp;&nbsp;&nbsp;</p>
-                                                                        <div class="rateit rateit-mdi" data-rateit-mode="font" data-rateit-icon="󰓒" data-rateit-resetable="false"  data-rateit-ispreset="true"></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-1">
-                                                                </div>
-                                                                <div class="col-11">
-                                                                    <div class="row">
-                                                                        <p class="mt-0">also Reviews witouth Text:</p>
-                                                                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                                                                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                                                                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                                                                        <div class="custom-control custom-switch">
-                                                                            <input type="checkbox" class="custom-control-input" id="customSwitchFacebookReviewWithoutText">
-                                                                            <label class="custom-control-label" for="customSwitchFacebookReviewWithoutText"></label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
                                                             <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
 
 
@@ -885,6 +775,183 @@
 
 
                                                 </div>
+                                            </div>
+
+
+
+                                            <!-- Settings for authors-->
+                                            <div class="tab-pane" id="setting-for-authors">
+                                                <div class="row">
+                                                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                        <div class="card widget-flat">
+                                                            <div class="card-body">
+                                                                <div class="float-right">
+                                                                    <img src="assets/images/google.svg" alt="contact-img" title="contact-img" class="rounded mr-3" height="40" />
+                                                                </div>
+                                                                <h5 class="text-muted font-weight-normal mt-0" title="Growth">Answer Google Reviews</h5>
+                                                                <div class="row">
+                                                                <div class="float-left">
+                                                                    <div class="col-md- col-sm-3 col-xs-3">&nbsp;</div>
+                                                                    <!-- Info Switch-->
+                                                                    <input type="checkbox" id="switch4" checked data-switch="info"/>
+                                                                    <label for="switch4"  data-on-label="On" data-off-label="Off"></label>
+                                                                </div>
+                                                                <h4 class="mt-3 mb-3">&nbsp; Answering</h4>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <div class="row">
+                                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                <div class="row">
+                                                                                    <p class="mt-0">&nbsp;&nbsp;&nbsp; rating from</p>
+                                                                                    <p>&nbsp;&nbsp;&nbsp;</p>
+                                                                                    <div class="rateit rateit-mdi" data-rateit-mode="font" data-rateit-icon="󰓒" data-rateit-resetable="false"  data-rateit-ispreset="true"></div>
+                                                                                    <p>&nbsp;&nbsp;&nbsp;</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                <div class="row">
+                                                                                    <p class="mt-0">&nbsp;&nbsp;&nbsp; to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                                                                    <p>&nbsp;&nbsp;&nbsp;</p>
+                                                                                    <div class="rateit rateit-mdi" data-rateit-mode="font" data-rateit-icon="󰓒" data-rateit-resetable="false"  data-rateit-ispreset="true"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <div class="row">
+                                                                            <p>&nbsp;&nbsp;&nbsp;</p>
+                                                                            <div class="custom-control custom-switch">
+                                                                                <input type="checkbox" class="custom-control-input" id="customSwitchGoogleReviewWithoutText">
+                                                                                <label class="custom-control-label" for="customSwitchGoogleReviewWithoutText">also Reviews witouth Text</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div> <!-- end col-->
+
+
+
+
+                                                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                        <div class="card widget-flat">
+                                                            <div class="card-body">
+                                                                <div class="float-right">
+                                                                    <img src="assets/images/ta-logo.svg" alt="contact-img" title="contact-img" class="rounded mr-3" height="45" />
+                                                                </div>
+                                                                <h5 class="text-muted font-weight-normal mt-0" title="Growth">Answer TripAdvisor Reviews</h5>
+                                                                <div class="row">
+                                                                    <div class="float-left">
+                                                                        <div class="col-md- col-sm-3 col-xs-3">&nbsp;</div>
+                                                                        <!-- Info Switch-->
+                                                                        <input type="checkbox" id="switch2" checked data-switch="info"/>
+                                                                        <label for="switch2"  data-on-label="On" data-off-label="Off"></label>
+                                                                    </div>
+                                                                    <h4 class="mt-3 mb-3">&nbsp; Answering</h4>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <div class="row">
+                                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                <div class="row">
+                                                                                    <p class="mt-0">&nbsp;&nbsp;&nbsp; rating from</p>
+                                                                                    <p>&nbsp;&nbsp;&nbsp;</p>
+                                                                                    <div class="rateit rateit-mdi" data-rateit-mode="font" data-rateit-icon="󰓒" data-rateit-resetable="false"  data-rateit-ispreset="true"></div>
+                                                                                    <p>&nbsp;&nbsp;&nbsp;</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                <div class="row">
+                                                                                    <p class="mt-0">&nbsp;&nbsp;&nbsp; to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                                                                    <p>&nbsp;&nbsp;&nbsp;</p>
+                                                                                    <div class="rateit rateit-mdi" data-rateit-mode="font" data-rateit-icon="󰓒" data-rateit-resetable="false"  data-rateit-ispreset="true"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <div class="row">
+                                                                            <p>&nbsp;&nbsp;&nbsp;</p>
+                                                                            <div class="custom-control custom-switch">
+                                                                                <input type="checkbox" class="custom-control-input" id="customSwitchTripAdvisorReviewWithoutText">
+                                                                                <label class="custom-control-label" for="customSwitchTripAdvisorReviewWithoutText">also Reviews witouth Text</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div> <!-- end col-->
+
+                                                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                        <div class="card widget-flat">
+                                                            <div class="card-body">
+                                                                <div class="float-right">
+                                                                    <img src="assets/images/facebook.svg" alt="contact-img" title="contact-img" class="rounded mr-3" height="40" />
+                                                                </div>
+                                                                <h5 class="text-muted font-weight-normal mt-0" title="Growth">Answer Google Reviews</h5>
+                                                                <div class="row">
+                                                                    <div class="float-left">
+                                                                        <div class="col-md- col-sm-3 col-xs-3">&nbsp;</div>
+                                                                        <!-- Info Switch-->
+                                                                        <input type="checkbox" id="switch3" checked data-switch="info"/>
+                                                                        <label for="switch3"  data-on-label="On" data-off-label="Off"></label>
+                                                                    </div>
+                                                                    <h4 class="mt-3 mb-3">&nbsp; Answering</h4>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <div class="row">
+                                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                <div class="row">
+                                                                                    <p class="mt-0">&nbsp;&nbsp;&nbsp; rating from</p>
+                                                                                    <p>&nbsp;&nbsp;&nbsp;</p>
+                                                                                    <div class="rateit rateit-mdi" data-rateit-mode="font" data-rateit-icon="󰓒" data-rateit-resetable="false"  data-rateit-ispreset="true"></div>
+                                                                                    <p>&nbsp;&nbsp;&nbsp;</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                <div class="row">
+                                                                                    <p class="mt-0">&nbsp;&nbsp;&nbsp; to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                                                                    <p>&nbsp;&nbsp;&nbsp;</p>
+                                                                                    <div class="rateit rateit-mdi" data-rateit-mode="font" data-rateit-icon="󰓒" data-rateit-resetable="false"  data-rateit-ispreset="true"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <div class="row">
+                                                                            <p>&nbsp;&nbsp;&nbsp;</p>
+                                                                            <div class="custom-control custom-switch">
+                                                                                <input type="checkbox" class="custom-control-input" id="customSwitchFacebookReviewWithoutText">
+                                                                                <label class="custom-control-label" for="customSwitchFacebookReviewWithoutText">also Reviews witouth Text</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div> <!-- end col-->
+
+                                                    </div>
+
                                             </div>
 
 

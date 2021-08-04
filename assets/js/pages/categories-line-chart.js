@@ -27,7 +27,7 @@ var options = {
     chart: {toolbar: {
             show: false
         },
-        height: 350,
+        height: 600,
         type: 'line',
         zoom: {
             enabled: false
@@ -36,6 +36,11 @@ var options = {
     colors: ['#00b0db','#00e396','#ffb01a', '#ff4560','#775cd0','#D3D3D3'],
     dataLabels: {
         enabled: false
+    },
+    stroke: {
+        show: true,
+        curve: 'straight',
+        width: 3,
     },
 
     legend: {

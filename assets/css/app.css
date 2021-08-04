@@ -14,7 +14,7 @@ File: Main Css File
  */
 :root {
   --blue: #2c8ef8;
-  --indigo: #727cf5;
+  --indigo: #20b0dc;
   --purple: #6b5eae;
   --pink: #ff679b;
   --red: #fa5c7c;
@@ -26,7 +26,7 @@ File: Main Css File
   --white: #fff;
   --gray: #98a6ad;
   --gray-dark: #343a40;
-  --primary: #727cf5;
+  --primary: #20b0dc;
   --secondary: #6c757d;
   --success: #0acf97;
   --info: #39afd1;
@@ -3271,7 +3271,7 @@ input[type="button"].btn-block {
     -webkit-transform: translateX(0.75rem);
             transform: translateX(0.75rem); }
   .custom-switch .custom-control-input:disabled:checked ~ .custom-control-label::before {
-    background-color: rgba(114, 124, 245, 0.5); }
+    background-color: rgba(32,176,220,255); }
 
 .custom-select {
   display: inline-block;
@@ -9673,8 +9673,8 @@ body[data-layout="topnav"] .container-fluid, body[data-layout="topnav"] .contain
 
 .custom-checkbox-primary .custom-control-input:checked ~ .custom-control-label:before,
 .custom-radio-primary .custom-control-input:checked ~ .custom-control-label:before {
-  background-color: #727cf5;
-  border-color: #727cf5; }
+  background-color: #20b0dc;
+  border-color: #20b0dc; }
 
 .custom-checkbox-secondary .custom-control-input:checked ~ .custom-control-label:before,
 .custom-radio-secondary .custom-control-input:checked ~ .custom-control-label:before {

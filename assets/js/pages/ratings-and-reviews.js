@@ -36,6 +36,11 @@ var optionsLine1 = {
     dataLabels: {
         enabled: false
     },
+    stroke: {
+        show: true,
+        curve: 'straight',
+        width: 3,
+    },
 
     legend: { show: true
     },
@@ -116,6 +121,11 @@ var optionsLine2 = {
     colors: ['#00b0db','#00e396','#ffb01a'],
     dataLabels: {
         enabled: false
+    },
+    stroke: {
+        show: true,
+        curve: 'straight',
+        width: 3,
     },
 
     legend: { show: false,

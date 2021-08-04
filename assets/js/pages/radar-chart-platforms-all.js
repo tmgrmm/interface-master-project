@@ -20,7 +20,7 @@ var options = {
         type: 'radar',
     },
     colors: ['#00b0db','#00e396','#ffb01a'],
-    xaxis: {
+    yaxis: {
         categories: ['Meals', 'Location', 'Price', 'Features', 'Ambiance', 'Service'],
         labels: {
             show: true,

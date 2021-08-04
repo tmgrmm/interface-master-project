@@ -25,6 +25,11 @@ var options = {
         dataLabels: {
             enabled: false
         },
+        stroke: {
+            show: true,
+            curve: 'straight',
+            width: 3,
+        },
 
         legend: {
             tooltipHoverFormatter: function(val, opts) {

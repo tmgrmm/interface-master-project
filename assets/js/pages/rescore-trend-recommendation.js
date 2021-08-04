@@ -18,7 +18,9 @@ var options = {
         enabled: false
     },
     stroke: {
-        curve: 'straight'
+        show: true,
+        curve: 'straight',
+        width: 3,
     },
     grid: {
         row: {
