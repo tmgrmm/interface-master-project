@@ -15,6 +15,8 @@
 
          <!-- third party css -->
          <link href="assets/css/vendor/britecharts.min.css" rel="stylesheet" type="text/css" />
+        <link href="node_modules/bootstrap4c-chosen/dist/css/component-chosen.css/component-chosen.min.css" rel="stylesheet" >
+
 
         <!-- App css -->
         <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
@@ -57,7 +59,7 @@
                         <li class="side-nav-item">
                             <a href="to-do.html" class="side-nav-link">
                                 <i class="uil-edit"> </i>
-                                <span class="badge badge-success float-right">4</span>
+                                <span class="badge badge-success float-right">3</span>
                                 <span>To-Do</span>
                             </a>
                         </li>
@@ -463,115 +465,390 @@
                             <div class="col-12">
                                 <!-- start page title -->
                                 <div class="page-heading d-lg-flex justify-content-between align-items-center pt-2 pb-2">
-                                    <h4 class="page-heading-title">Integration - Marketplace </h4>
+                                    <h4 class="page-heading-title">Reporting </h4>
+                                    </div>
                                 </div>
                                 <!-- end page title -->
                             </div>
                         </div>     
                         <!-- end page title -->
+
                         <div class="row">
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6">
-                                <div class="card widget-flat">
+                            <div class="col-12">
+                                <div class="card">
                                     <div class="card-body">
-                                        <div class="float-right">
-                                            <i class="mdi mdi-pulse widget-icon"></i>
-                                        </div>
-                                        <h5 class="text-muted font-weight-normal mt-0" title="Growth">Extension</h5>
-                                        <h3 class="mt-3 mb-3">Reservationsystem A</h3>
-                                        <p class="mb-0 text-muted">
-                                                <span class="text-success mr-2">Price: FREE</span>
-                                            <button type="button" class="btn btn-info float-right">Add</button>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div> <!-- end col-->
+                                        <style>
+                                            a.active.nav-link{background-color: #00b0db!important;}
+                                        </style>
 
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6">
-                                <div class="card widget-flat">
-                                    <div class="card-body">
-                                        <div class="float-right">
-                                            <i class="mdi mdi-pulse widget-icon"></i>
-                                        </div>
-                                        <h5 class="text-muted font-weight-normal mt-0" title="Growth">Extension</h5>
-                                        <h3 class="mt-3 mb-3">Reservationsystem B</h3>
-                                        <p class="mb-0 text-muted">
-                                            <span class="text-success mr-2">Price: CHF 10/month</span>
-                                            <button type="button" class="btn btn-info float-right">Add</button>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div> <!-- end col-->
+                                        <!-- Different Information -->
+                                        <ul class="nav nav-pills bg-nav-pills nav-justified mb-3">
+                                            <li class="nav-item">
+                                                <a href="#automaticreport" data-toggle="tab" aria-expanded="false"
+                                                   class="nav-link rounded-0 active">
+                                                    <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                                    <i class="mdi  mdi-file-document-multiple-outline font-18"></i>
+                                                    <span style="font-size: 20px" class="d-none d-lg-block">Automatic Report</span>
+                                                    <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#downloadnow" data-toggle="tab" aria-expanded="true" class="nav-link rounded-0">
+                                                    <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                                    <i class="mdi  mdi-download-box-outline font-18"></i>
+                                                    <span style="font-size: 20px" class="d-none d-lg-block">Download Now</span>
+                                                    <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                                </a>
+                                            </li>
+                                        </ul>
 
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6">
-                                <div class="card widget-flat">
-                                    <div class="card-body">
-                                        <div class="float-right">
-                                            <i class="mdi mdi-pulse widget-icon"></i>
-                                        </div>
-                                        <h5 class="text-muted font-weight-normal mt-0" title="Growth">Extension</h5>
-                                        <h3 class="mt-3 mb-3">Newslettertool</h3>
-                                        <p class="mb-0 text-muted">
-                                            <span class="text-success mr-2">Price: FREE TEST VERSION </span>
-                                            <button type="button" class="btn btn-info float-right">Add</button>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div> <!-- end col-->
+                                        <!-- Steps Information -->
+                                        <div class="tab-content">
+
+                                            <!-- Automatic Report -->
+                                            <div class="tab-pane show active" id="automaticreport">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <label>How often?</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="border p-3 rounded mb-3 mb-md-0">
+                                                            <address class="mb-0 font-14 address-lg">
+                                                                <div class="custom-control custom-radio">
+                                                                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked>
+                                                                    <label class="custom-control-label font-16 font-weight-bold" for="customRadio1">Daily</label>
+                                                                </div>
+                                                            </address>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="border p-3 rounded">
+                                                            <address class="mb-0 font-14 address-lg">
+                                                                <div class="custom-control custom-radio">
+                                                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                                    <label class="custom-control-label font-16 font-weight-bold" for="customRadio2">Weekly</label>
+                                                                </div>
+                                                            </address>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="border p-3 rounded mb-3 mb-md-0">
+                                                            <address class="mb-0 font-14 address-lg">
+                                                                <div class="custom-control custom-radio">
+                                                                    <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                                                                    <label class="custom-control-label font-16 font-weight-bold" for="customRadio3">Monthly</label>
+                                                                </div>
+                                                            </address>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <label>Send report to:</label>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label>Choose language:</label>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label>Choose file type:</label>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label>Choose category:</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <input class="form-control"  type="text" placeholder="alex.zaugg@bon-appetit.com" id="email-address"  />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <select data-toggle="select2" title="Language">
+                                                            <option value="ENG">English</option>
+                                                            <option value="DE">German</option>
+                                                            <option value="FR">French</option>
+                                                            <option value="ITA">Italian</option>
+                                                        </select>
+                                                    </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <select data-toggle="select2" title="FileType">
+                                                                <option value="PDF">PDF</option>
+                                                                <option value="XLS">Excel</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <select data-toggle="select2" title="Category">
+                                                                <option value="AllCategories">All Categories</option>
+                                                                <option value="Meals">Meals</option>
+                                                                <option value="Location">Location</option>
+                                                                <option value="Service">Service</option>
+                                                                <option value="Ambiance">Ambiance</option>
+                                                                <option value="Price">Price</option>
+                                                                <option value="Features">Features</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
 
 
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6">
-                                <div class="card widget-flat">
-                                    <div class="card-body">
-                                        <div class="float-right">
-                                            <i class="mdi mdi-pulse widget-icon"></i>
-                                        </div>
-                                        <h5 class="text-muted font-weight-normal mt-0" title="Growth">Extension</h5>
-                                        <h3 class="mt-3 mb-3">Cashier System</h3>
-                                        <p class="mb-0 text-muted">
-                                            <span class="text-success mr-2">Price: 12.00 CHF</span>
-                                            <button type="button" class="btn btn-info float-right">Add</button>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div> <!-- end col-->
+                                                    </div>
 
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6">
-                                <div class="card widget-flat">
-                                    <div class="card-body">
-                                        <div class="float-right">
-                                            <i class="mdi mdi-pulse widget-icon"></i>
-                                        </div>
-                                        <h5 class="text-muted font-weight-normal mt-0" title="Growth">Extension</h5>
-                                        <h3 class="mt-3 mb-3">Application F</h3>
-                                        <p class="mb-0 text-muted">
-                                            <span class="text-success mr-2">Price: CHF 2/month</span>
-                                            <button type="button" class="btn btn-info float-right">Add</button>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div> <!-- end col-->
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <label>Choose content:</label>
+                                                    </div>
+                                                </div>
 
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6">
-                                <div class="card widget-flat">
-                                    <div class="card-body">
-                                        <div class="float-right">
-                                            <i class="mdi mdi-pulse widget-icon"></i>
-                                        </div>
-                                        <h5 class="text-muted font-weight-normal mt-0" title="Growth">Extension</h5>
-                                        <h3 class="mt-3 mb-3">Application G</h3>
-                                        <p class="mb-0 text-muted">
-                                            <span class="text-success mr-2">Price: FREE</span>
-                                            <button type="button" class="btn btn-info float-right">Add</button>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div> <!-- end col-->
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <ul class="list-group">
+                                                            <li class="list-group-item">
+                                                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                General Report
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                Benchmarking - Internal
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                Benchmarking - External
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <ul class="list-group">
+                                                            <li class="list-group-item">
+                                                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                Advanced Analytics
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                All Reviews
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                Employee Motivation (only positive Reviews)
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <button type="button" class="btn btn-info float-right">Order report</button>
+                                                    </div> <!-- end column-->
+                                                </div> <!-- end row-->
+
+                                                <div class="row">
+                                                    <div class="mt-2">
+                                                        <a class="text-dark" data-toggle="collapse" href="#orderedReports" aria-expanded="false"
+                                                           aria-controls="todayTasks">
+                                                            <h5 class="m-0 pb-2">
+                                                                <i class='uil uil-angle-down font-18'></i> Ordered reports <span class="text-muted">(0)</span>
+                                                            </h5>
+                                                        </a>
+
+                                                        <div class="collapse show" id="orderedReports">
+                                                            <div class="card mb-0">
+                                                                <div class="card-body">
+                                                                    <!-- task -->
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <div class="table-responsive-xl">
+                                                                                <table class="table w-100 d-print-block d-print-table">
+                                                                                    <thead class="thead-light">
+                                                                                        <tr>
+                                                                                            <th>Order Date</th>
+                                                                                            <th>Ordered By </th>
+                                                                                            <th>Frequency</th>
+                                                                                            <th>Send To</th>
+                                                                                            <th>Language</th>
+                                                                                            <th>File Type</th>
+                                                                                            <th>Category</th>
+                                                                                            <th>Content</th>
+                                                                                            <th></th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                11.08.2021
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                Alex Zaugg
+                                                                                            </td>
+                                                                                                    <td>
+                                                                                                        Monthly
+                                                                                                    </td>
+                                                                                                    <td>
+                                                                                                        alex.zaugg@bon-appetit.com
+                                                                                                    </td>
+                                                                                                    <td>
+                                                                                                        German
+                                                                                                    </td>
+                                                                                                    <td>
+                                                                                                        PDF
+                                                                                                    </td>
+                                                                                                    <td>
+                                                                                                       Meals
+                                                                                                    </td>
+                                                                                                    <td>
+                                                                                                        All Reviews
+                                                                                                    </td>
+
+                                                                                                    <td class="table-action">
+                                                                                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
+                                                                                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+                                                                                                    </td>
+                                                                                        </tr>
+
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+
+
+                                                                        </div>
 
 
 
+
+
+
+                                                                    </div> <!-- end card-body-->
+                                                                </div> <!-- end card -->
+                                                            </div> <!-- end .collapse-->
+                                                        </div> <!-- end .mt-2-->
+                                                        </div>
+                                                        </div>
+
+
+                                            </div>
+
+                                            <!-- Download Now -->
+                                            <div class="tab-pane" id="downloadnow">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <label>Choose period:</label>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label>Choose language:</label>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label>Choose file type:</label>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label>Choose category:</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control date" id="singledaterange" data-toggle="date-picker" data-cancel-class="btn-warning">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <select data-toggle="select2" title="Language">
+                                                                <option value="ENG">English</option>
+                                                                <option value="DE">German</option>
+                                                                <option value="FR">French</option>
+                                                                <option value="ITA">Italian</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <select data-toggle="select2" title="FileType">
+                                                                <option value="PDF">PDF</option>
+                                                                <option value="XLS">Excel</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <select data-toggle="select2" title="Category">
+                                                                <option value="AllCategories">All Categories</option>
+                                                                <option value="Meals">Meals</option>
+                                                                <option value="Location">Location</option>
+                                                                <option value="Service">Service</option>
+                                                                <option value="Ambiance">Ambiance</option>
+                                                                <option value="Price">Price</option>
+                                                                <option value="Features">Features</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <label>Choose content:</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <ul class="list-group">
+                                                                                <li class="list-group-item">
+                                                                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                                    General Report
+                                                                                </li>
+                                                                                <li class="list-group-item">
+                                                                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                                    Benchmarking
+                                                                                </li>
+                                                                                <li class="list-group-item">
+                                                                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                                    Advanced Analytics
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div> <!-- end column-->
+
+                                                                        <div class="col-md-6">
+                                                                            <ul class="list-group">
+                                                                                <li class="list-group-item">
+                                                                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                                    All Reviews
+                                                                                </li>
+                                                                                <li class="list-group-item">
+                                                                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                                    Employee Motivation (only positive Reviews)
+                                                                                </li>
+                                                                                <li class="list-group-item">
+                                                                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                                    Content Analysis
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div> <!-- end column-->
+
+                                                                    </div> <!-- end row-->
+
+                                                                    <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+
+
+
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <button type="button" class="btn btn-info float-right">Download</button>
+
+                                                                        </div> <!-- end column-->
+                                                                    </div> <!-- end row-->
+                                                </div>
+
+                                        </div> <!-- end tab content-->
+
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div> <!-- end col -->
                         </div>
-
-
+                        <!-- end row-->
 
 
 
@@ -724,6 +1001,8 @@
         <script src="assets/js/vendor/d3.min.js" defer></script>
         <script src="assets/js/vendor/britecharts.min.js" defer></script>
         <script src="assets/js/pages/init.britechart.js" defer></script>
+
+        <script>$('.form-control-chosen').chosen();</script>
         
         <script>
             //default date range picker

@@ -59,7 +59,7 @@
                         <li class="side-nav-item">
                             <a href="to-do.html" class="side-nav-link">
                                 <i class="uil-edit"> </i>
-                                <span class="badge badge-success float-right">4</span>
+                                <span class="badge badge-success float-right">3</span>
                                 <span>To-Do</span>
                             </a>
                         </li>
@@ -550,19 +550,19 @@
                                                         <label>Send report to:</label>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <label>Language:</label>
+                                                        <label>Choose language:</label>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <label>File type:</label>
+                                                        <label>Choose file type:</label>
                                                     </div>
                                                     <div class="col-md-3">
-                                                        <label>Category:</label>
+                                                        <label>Choose category:</label>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-3">
                                                         <div class="form-group">
-                                                            <input class="form-control" type="text" placeholder="Enter email address" id="email-address" />
+                                                            <input class="form-control" readonly="" type="text" placeholder="alex.zaugg@bon-appetit.com" id="email-address"  />
                                                         </div>
                                                     </div>
                                                     <div class="col-md-3">
@@ -615,16 +615,20 @@
                                                             </li>
                                                             <li class="list-group-item">
                                                                 <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                                                Benchmarking
+                                                                Benchmarking - Internal
                                                             </li>
                                                             <li class="list-group-item">
                                                                 <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                                                Advanced Analytics
+                                                                Benchmarking - External
                                                             </li>
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <ul class="list-group">
+                                                            <li class="list-group-item">
+                                                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                                                Advanced Analytics
+                                                            </li>
                                                             <li class="list-group-item">
                                                                 <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
                                                                 All Reviews
@@ -633,10 +637,6 @@
                                                                 <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
                                                                 Employee Motivation (only positive Reviews)
                                                             </li>
-                                                            <li class="list-group-item">
-                                                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                                                                Content Analysis
-                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -644,10 +644,58 @@
                                                 <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
 
                                                 <div class="row">
-                                                    <div class="col-12">
-                                                        <button type="button" class="btn btn-info float-right">Save</button>
+                                                    <div class="col-12" align="right">
+                                                        <a href="reporting-ordered-reports.html" class="button btn btn-info">Order report</a>
                                                     </div> <!-- end column-->
                                                 </div> <!-- end row-->
+
+                                                <div class="row">
+                                                    <div class="mt-2">
+                                                        <a class="text-dark" data-toggle="collapse" href="#orderedReports" aria-expanded="true"
+                                                           aria-controls="todayTasks">
+                                                            <h5 class="m-0 pb-2">
+                                                                <i class='uil uil-angle-down font-18'></i> Ordered reports <span class="text-muted">(0)</span>
+                                                            </h5>
+                                                        </a>
+
+                                                        <div class="collapse" id="orderedReports">
+                                                            <div class="card mb-0">
+                                                                <div class="card-body">
+                                                                    <!-- task -->
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <div class="table-responsive-xl" width="100%;">
+                                                                                <table class="table w-100 d-print-block d-print-table ">
+                                                                                    <thead class="thead-light">
+                                                                                        <tr>
+                                                                                            <th>Order Date</th>
+                                                                                            <th>Ordered By </th>
+                                                                                            <th>Frequency</th>
+                                                                                            <th>Send To</th>
+                                                                                            <th>Language</th>
+                                                                                            <th>File Type</th>
+                                                                                            <th>Category</th>
+                                                                                            <th>Content</th>
+                                                                                            <th></th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                </table>
+                                                                            </div>
+
+
+                                                                        </div>
+
+
+
+
+
+
+                                                                    </div> <!-- end card-body-->
+                                                                </div> <!-- end card -->
+                                                            </div> <!-- end .collapse-->
+                                                        </div> <!-- end .mt-2-->
+                                                        </div>
+                                                        </div>
 
 
                                             </div>
@@ -755,12 +803,6 @@
                                                                     <div class="row">
                                                                         <div class="col-12">
                                                                             <button type="button" class="btn btn-info float-right">Download</button>
-
-                                                                            <select id="multiple" class="form-control form-control-chosen" data-placeholder="Please select..." >
-                                                                                <option>Optio </option>
-                                                                                <option>Option One</option>
-                                                                                <option>...</option>
-                                                                            </select>
 
                                                                         </div> <!-- end column-->
                                                                     </div> <!-- end row-->

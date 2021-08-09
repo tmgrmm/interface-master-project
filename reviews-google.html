@@ -461,6 +461,7 @@
             <div class="container-fluid">
 
                 <!-- start page title -->
+
                 <div class="row">
                     <div class="col-12">
                         <!-- start page title -->
@@ -468,14 +469,14 @@
                             <h4 class="page-heading-title">Reviews </h4>
                             <div class="page-heading-right d-flex">
                                 <div class="dropdown">
-                                    <a class="btn btn-secondary dropdown-toggle mr-2" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        All Platforms
+                                    <a class="btn btn-info dropdown-toggle mr-2" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Google
                                     </a>
 
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                         <a class="dropdown-item" href="#">All Platforms</a>
                                         <a class="dropdown-item" href="#">Facebook</a>
-                                        <a class="dropdown-item" href="reviews-google.html">Google</a>
+                                        <a class="dropdown-item" href="#">Google</a>
                                         <a class="dropdown-item" href="#">TripAdvisor</a>
                                     </div>
                                 </div>
@@ -486,7 +487,7 @@
 
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                         <a class="dropdown-item" href="#">All Ratings</a>
-                                        <a class="dropdown-item" href="#">1.0</a>
+                                        <a class="dropdown-item" href="reviews-google-1.0.html">1.0</a>
                                         <a class="dropdown-item" href="#">2.0</a>
                                         <a class="dropdown-item" href="#">3.0</a>
                                         <a class="dropdown-item" href="#">4.0</a>
@@ -529,7 +530,7 @@
                                     <div class="form-group">
 
                                         <div class="input-group">
-                                                <div id="reportrange" class="form-control form-control-light" data-toggle="date-picker-range" data-target-display="#selectedValue"  data-cancel-class="btn-danger">
+                                                <div id="reportrange" class="form-control form-control-light" data-toggle="date-picker-range" data-target-display="#selectedValue"  data-cancel-class="btn-light">
                                                     <i class="mdi mdi-calendar"></i>&nbsp;
                                                     <span id="selectedValue"></span> <i class="mdi mdi-menu-down"></i>
                                                 </div>
@@ -548,101 +549,16 @@
 
                 <div class="row">
                     <div class="col-12">
+                        <div class="alert alert-info" role="alert">
+                            <strong>You have filtered for: </strong> &nbsp;&nbsp; <i class="mdi mdi-filter me-2"></i> Platform: Google
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-
-                                <!--
-                                                                        <div class="table-responsive">
-                                                                            <table class="table table-centered w-100 dt-responsive nowrap" id="product-datatable">
-                                                                                <thead class="thead-light">
-                                                                                <tr>
-                                                                                    <th>Date</th>
-                                                                                    <th class="all">Rating</th>
-                                                                                    <th>Review</th>
-                                                                                    <th>Language</th>
-                                                                                    <th>Platform</th>
-                                                                                    <th>Status</th>
-                                                                                    <th style="width: 85px;">Action</th>
-                                                                                </tr>
-                                                                                </thead>
-                                                                                <tbody>
-                                                                                <tr>
-
-                                                                                    <td>
-                                                                                        09/12/2018
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <p class="m-0 d-inline-block align-middle font-16">
-                                                                                            <a href="" class="text-body">Bon Appetit</a>
-                                                                                            <br/>
-                                                                                            <span class="text-warning mdi mdi-star"></span>
-                                                                                            <span class="text-warning mdi mdi-star"></span>
-                                                                                            <span class="text-warning mdi mdi-star"></span>
-                                                                                            <span class="text-warning mdi mdi-star"></span>
-                                                                                            <span class="text-warning mdi mdi-star-half"></span>
-                                                                                        </p>
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        I have to say, I enjoyed every single bite of the meal. I had a 3 course meal, with a couple of beers. Considering the quality, the price is reasonable. Ideal for those who want a romantic night out.
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        English
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <img src="assets/images/tripadvisor-logo.png" alt="contact-img" title="contact-img" class="rounded mr-3" height="48" />
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <span class="badge badge-danger">Ready to respond</span>
-                                                                                    </td>
-
-                                                                                    <td class="table-action">
-                                                                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
-                                                                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <tr>
-                                                                                    <td>
-                                                                                        09/12/2018
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <p class="m-0 d-inline-block align-middle font-16">
-                                                                                            <a href="" class="text-body">Bon Appetit</a>
-                                                                                            <br/>
-                                                                                            <span class="text-warning mdi mdi-star"></span>
-                                                                                            <span class="text-warning mdi mdi-star"></span>
-                                                                                            <span class="text-warning mdi mdi-star"></span>
-                                                                                            <span class="text-warning mdi mdi-star-half"></span>
-                                                                                        </p>
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        This cozy restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide wine list and wonderful dessert. I recommend to everyone! I would like to come back here again and again.
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        English
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <img src="assets/images/tripadvisor-logo.png" alt="contact-img" title="contact-img" class="rounded mr-3" height="48" />
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <span class="badge badge-success">Re:sponded</span>
-                                                                                    </td>
-
-                                                                                    <td class="table-action">
-                                                                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
-                                                                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
-                                                                                        <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                                                                    </td>
-                                                                                </tr>
-
-
-
-                                                                                </tbody>
-                                                                            </table>
-
-                                                                        </div>
-                                                                        -->
                                 <div class="table-responsive">
                                     <table id="reviews-table" class="table dt-responsive nowrap w-100">
                                         <thead>
@@ -751,49 +667,6 @@
                                         <tr>
                                             <td>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                                    <label class="custom-control-label" for="customCheck3">&nbsp;</label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <img class="platform-logo" src="assets/images/ta-logo.svg" alt="tripadvisor logo" height="20">
-                                                <b class="platform-name font-10">Bon Appétit</b>
-                                                <span class="platform-name font-10 d-block mt-1" >Schaffhausen</span>
-                                            </td>
-                                            <td>
-                                                25.05.2021
-                                            </td>
-                                            <td>
-                                                <div class="text-nowrap">
-                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                    <i class="mdi mdi-star-half-full text-warning" style="font-size: 1.1rem;"></i>
-                                                </div>
-                                                <span>4.5</span>
-                                            </td>
-                                            <td>
-                                                <span>IT</span>
-                                                <button type="button" class="btn btn-translate"><i class="mdi mdi-translate"></i></button>
-                                            </td>
-
-                                            <td>
-                                                <i>Anonym</i>
-                                                <b>Hotel 2B ist 1A!</b>
-                                                <p>(+) Tolle Zimmerausstattung, man fühlt sich wie zuhause.</p>
-                                            </td>
-                                            <td><span class="badge badge-warning-lighten">Ready to respond</span></td>
-
-                                            <td class="table-action">
-                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-information"></i></a>
-                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-open-in-new"></i></a>
-                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-message-processing"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="custom-control custom-checkbox">
                                                     <input type="checkbox" class="custom-control-input" id="customCheck4">
                                                     <label class="custom-control-label" for="customCheck4">&nbsp;</label>
                                                 </div>
@@ -837,91 +710,6 @@
                                         <tr>
                                             <td>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck5">
-                                                    <label class="custom-control-label" for="customCheck5">&nbsp;</label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <img class="platform-logo" src="assets/images/facebook.svg" alt="facebook logo" height="20" />
-                                                <b class="platform-name font-10">Bon Appétit</b>
-                                                <span class="platform-name font-10 d-block mt-1" >Schaffhausen</span>
-                                            </td>
-                                            <td>
-                                                26.05.2021
-                                            </td>
-                                            <td>
-                                                <div class="text-nowrap">
-                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                    <i class="mdi mdi-star-outline text-warning" style="font-size: 1.1rem;"></i>
-                                                </div>
-                                                <span>4.0</span>
-                                            </td>
-                                            <td>
-                                                <span>DE</span>
-                                                <button type="button" class="btn btn-translate"><i class="mdi mdi-translate"></i></button>
-                                            </td>
-
-                                            <td>
-                                                <i>Lara</i>
-                                                <b>Hervorragend</b>
-                                            </td>
-                                            <td><span class="badge badge-secondary-lighten">Unanswered</span></td>
-
-                                            <td class="table-action">
-                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-information"></i></a>
-                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-open-in-new"></i></a>
-                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-message-processing"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck6">
-                                                    <label class="custom-control-label" for="customCheck6">&nbsp;</label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <img class="platform-logo" src="assets/images/ta-logo.svg" alt="tripadvisor logo" height="20">
-                                                <b class="platform-name font-10">Bon Appétit</b>
-                                                <span class="platform-name font-10 d-block mt-1" >Schaffhausen</span>
-                                            </td>
-                                            <td>
-                                                26.05.2021
-                                            </td>
-                                            <td>
-                                                <div class="text-nowrap">
-                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                    <i class="mdi mdi-star-outline text-warning" style="font-size: 1.1rem;"></i>
-                                                    <i class="mdi mdi-star-outline text-warning" style="font-size: 1.1rem;"></i>
-                                                    <i class="mdi mdi-star-outline text-warning" style="font-size: 1.1rem;"></i>
-                                                </div>
-                                                <span>10.0</span>
-                                            </td>
-                                            <td>
-                                                <span>IT</span>
-                                                <button type="button" class="btn btn-translate"><i class="mdi mdi-translate"></i></button>
-                                            </td>
-
-                                            <td>
-                                                <i>Anonym</i>
-                                                <b>Hotel 2B ist 1A!</b>
-                                                <p>(+) Tolle Zimmerausstattung, man fühlt sich wie zuhause.</p>
-                                            </td>
-                                            <td><span class="badge badge-warning-lighten">Ready to respond</span></td>
-
-                                            <td class="table-action">
-                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-information"></i></a>
-                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-open-in-new"></i></a>
-                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-message-processing"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="custom-control custom-checkbox">
                                                     <input type="checkbox" class="custom-control-input" id="customCheck7">
                                                     <label class="custom-control-label" for="customCheck7">&nbsp;</label>
                                                 </div>
@@ -955,91 +743,6 @@
                                                 <p>(+) Big rooms, plenty of storage, comfy beds (-) The showee drain didn't work well ao the bathroom flooded</p>
                                             </td>
                                             <td><span class="badge badge-danger-lighten">Without comment</span></td>
-
-                                            <td class="table-action">
-                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-information"></i></a>
-                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-open-in-new"></i></a>
-                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-message-processing"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                                    <label class="custom-control-label" for="customCheck2">&nbsp;</label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <img class="platform-logo" src="assets/images/facebook.svg" alt="facebook logo" height="20" />
-                                                <b class="platform-name font-10">Bon Appétit</b>
-                                                <span class="platform-name font-10 d-block mt-1" >Schaffhausen</span>
-                                            </td>
-                                            <td>
-                                                28.05.2021
-                                            </td>
-                                            <td>
-                                                <div class="text-nowrap">
-                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                    <i class="mdi mdi-star-outline text-warning" style="font-size: 1.1rem;"></i>
-                                                </div>
-                                                <span>7.0</span>
-                                            </td>
-                                            <td>
-                                                <span>DE</span>
-                                                <button type="button" class="btn btn-translate"><i class="mdi mdi-translate"></i></button>
-                                            </td>
-
-                                            <td>
-                                                <i>Lara</i>
-                                                <b>Hervorragend</b>
-                                            </td>
-                                            <td><span class="badge badge-secondary-lighten">Unanswered</span></td>
-
-                                            <td class="table-action">
-                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-information"></i></a>
-                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-open-in-new"></i></a>
-                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-message-processing"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck8">
-                                                    <label class="custom-control-label" for="customCheck8">&nbsp;</label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <img class="platform-logo" src="assets/images/ta-logo.svg" alt="tripadvisor logo" height="20">
-                                                <b class="platform-name font-10">Bon Appétit</b>
-                                                <span class="platform-name font-10 d-block mt-1" >Schaffhausen</span>
-                                            </td>
-                                            <td>
-                                                25.05.2021
-                                            </td>
-                                            <td>
-                                                <div class="text-nowrap">
-                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                    <i class="mdi mdi-star-outline text-warning" style="font-size: 1.1rem;"></i>
-                                                    <i class="mdi mdi-star-outline text-warning" style="font-size: 1.1rem;"></i>
-                                                    <i class="mdi mdi-star-outline text-warning" style="font-size: 1.1rem;"></i>
-                                                </div>
-                                                <span>10.0</span>
-                                            </td>
-                                            <td>
-                                                <span>IT</span>
-                                                <button type="button" class="btn btn-translate"><i class="mdi mdi-translate"></i></button>
-                                            </td>
-
-                                            <td>
-                                                <i>Anonym</i>
-                                                <b>Hotel 2B ist 1A!</b>
-                                                <p>(+) Tolle Zimmerausstattung, man fühlt sich wie zuhause.</p>
-                                            </td>
-                                            <td><span class="badge badge-warning-lighten">Ready to respond</span></td>
 
                                             <td class="table-action">
                                                 <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-information"></i></a>
@@ -1125,49 +828,6 @@
                                                 <b>Hervorragend</b>
                                             </td>
                                             <td><span class="badge badge-secondary-lighten">Unanswered</span></td>
-
-                                            <td class="table-action">
-                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-information"></i></a>
-                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-open-in-new"></i></a>
-                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-message-processing"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck10">
-                                                    <label class="custom-control-label" for="customCheck10">&nbsp;</label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <img class="platform-logo" src="assets/images/ta-logo.svg" alt="tripadvisor logo" height="20">
-                                                <b class="platform-name font-10">Bon Appétit</b>
-                                                <span class="platform-name font-10 d-block mt-1" >Schaffhausen</span>
-                                            </td>
-                                            <td>
-                                                25.05.2021
-                                            </td>
-                                            <td>
-                                                <div class="text-nowrap">
-                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                    <i class="mdi mdi-star-outline text-warning" style="font-size: 1.1rem;"></i>
-                                                    <i class="mdi mdi-star-outline text-warning" style="font-size: 1.1rem;"></i>
-                                                    <i class="mdi mdi-star-outline text-warning" style="font-size: 1.1rem;"></i>
-                                                </div>
-                                                <span>2.0</span>
-                                            </td>
-                                            <td>
-                                                <span>IT</span>
-                                                <button type="button" class="btn btn-translate"><i class="mdi mdi-translate"></i></button>
-                                            </td>
-
-                                            <td>
-                                                <i>Anonym</i>
-                                                <b>Hotel 2B ist 1A!</b>
-                                                <p>(+) Tolle Zimmerausstattung, man fühlt sich wie zuhause.</p>
-                                            </td>
-                                            <td><span class="badge badge-warning-lighten">Ready to respond</span></td>
 
                                             <td class="table-action">
                                                 <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-information"></i></a>

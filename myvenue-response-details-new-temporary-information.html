@@ -484,7 +484,7 @@
                                         <ul class="nav nav-pills bg-nav-pills nav-justified mb-3">
                                             <li class="nav-item">
                                                 <a href="#regular-information" data-toggle="tab" aria-expanded="false"
-                                                   class="nav-link rounded-0 active">
+                                                   class="nav-link rounded-0 ">
                                                     <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
                                                     <i class="mdi mdi-account-circle font-18"></i>
                                                     <span style="font-size: 20px" class="d-none d-lg-block">Regular Information</span>
@@ -500,7 +500,7 @@
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a href="#temporary-information" data-toggle="tab" aria-expanded="true" class="nav-link rounded-0">
+                                                <a href="#temporary-information" data-toggle="tab" aria-expanded="true" class="nav-link rounded-0 active">
                                                     <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
                                                     <i class="mdi  mdi-timer-sand font-18"></i>
                                                     <span style="font-size: 20px" class="d-none d-lg-block">Temporary Information</span>
@@ -515,7 +515,7 @@
                                         <div class="tab-content">
 
                                             <!-- Billing Content-->
-                                            <div class="tab-pane show active" id="regular-information">
+                                            <div class="tab-pane" id="regular-information">
                                                 <div class="row">
                                                     <div class="col-lg-6">
                                                         <h4 class="mt-2">Facts & Figures</h4>
@@ -957,12 +957,8 @@
 
 
                                             <!-- Temporary Content-->
-                                            <div class="tab-pane" id="temporary-information">
-                                            <div class="row mb-2">
-                                                <div class="col-sm-4">
-                                                    <a href="myvenue-response-details-new-temporary-information.html" class="btn btn-danger btn-rounded mb-3"><i class="mdi mdi-plus"></i>Add new data</a>
-                                                </div>
-                                            </div>
+                                            <div class="tab-pane show active" id="temporary-information">
+
                                             <!-- end row-->
 
                                             <div class="row">
@@ -1062,6 +1058,53 @@
                                                         </div> <!-- end row -->
                                                     </div> <!-- end card-body-->
                                                 </div> <!-- end card-->
+
+                                                <div class="col-md-6 col-xl-3">
+                                                    <!-- new card -->
+                                                    <div class="card d-block">
+                                                        <div class="card-body">
+                                                            <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="form-group">
+                                                                        <label>Category:</label>
+                                                                        <select data-toggle="select2" title="Formality">
+                                                                            <option value="Meal">Meal</option>
+                                                                            <option value="Service">Service</option>
+                                                                            <option value="Ambience">Ambience</option>
+                                                                            <option value="Location">Location</option>
+                                                                            <option value="Price">Price</option>
+                                                                            <option value="Features">Features</option>
+                                                                        </select>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div> <!-- end row -->
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <label>Text:</label>
+                                                                    <textarea class="form-control" id="example-textarea" rows="5"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-9">
+                                                                    <label class="mt-2">Expiry Date:</label>
+                                                                    <input type="text" class="form-control" data-provide="datepicker" data-date-format="d-M-yyyy" data-date-autoclose="true">
+                                                            </div>
+                                                                <div class="col-3">
+                                                                    <label class="mt-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                                                    <a href="myvenue-response-details.html" class="button btn btn-info">Save</a>
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- end row -->
+                                                    </div> <!-- end card-body-->
+                                                </div> <!-- end card-->
+<script>
+    $("#save_new_inf").click(function(){
+        $("save_new_inf").hide();
+    });
+</script>
+
 
 
 
@@ -1285,7 +1328,7 @@
 
         <!-- Ratings js -->
         <script src="assets/js/vendor/jquery.rateit.min.js"></script>
-        
+
         <script>
             //default date range picker
             $('#dash-daterange').daterangepicker({

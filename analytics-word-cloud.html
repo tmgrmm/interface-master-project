@@ -546,28 +546,46 @@
                                             <div class="tab-content">
                                                 <div class="tab-pane show active" id="all">
                                                     <div class="row">
-                                                        <div class="col-12">
+                                                        &nbsp;
+                                                    </div>
+                                                    <div class="row">
+                                                        &nbsp;
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-1" align="center">
+                                                        </div>
+                                                        <div class="col-11" align="center">
                                                             <div id="wordcloud">  </div>
                                                         </div>
                                                     </div>
+                                                    <div class="row">
+                                                        <div class="col-11" align="center">
+                                                            <button type="button" class="btn btn-outline-success btn-rounded">positive</button>
+                                                            <button type="button" class="btn btn-outline-warning btn-rounded">neutral</button>
+                                                            <button type="button" class="btn btn-outline-danger btn-rounded">negative</button>
+                                                        </div>
+                                                    </div>
+
+
                                                 </div>
+
+
+
                                                 <div class="tab-pane show active" id="meals">
-                                                    <p>...</p>
                                                 </div>
+
+
+
                                                 <div class="tab-pane" id="location">
-                                                    <p>...</p>
                                                 </div>
                                                 <div class="tab-pane" id="service">
-                                                    <p>...</p>
                                                 </div>
                                                 <div class="tab-pane" id="ambiance">
-                                                    <p>...</p>
                                                 </div>
                                                 <div class="tab-pane" id="price">
-                                                    <p>...</p>
                                                 </div>
                                                 <div class="tab-pane" id="features">
-                                                    <p>...</p>
                                                 </div>
 
                                             </div>
@@ -751,34 +769,57 @@
         <script src="assets/js/pages/wordcloud.js"></script>
         <script type="text/javascript">
             var list = [
-                "pizza",
+                "ratatouille",
                 "delivery",
                 "tiramisu",
                 "lunch",
                 "lake view",
                 "pasta",
-                "italian",
-                "loud",
-                "unfriendly",
-                "slow",
+                "french",
+                "dessert",
+                "appetizer",
+                "cocktails",
                 "city center",
                 "take-away",
-                "busy",
+                "beer",
                 "vegetarian",
                 "parking",
                 "price",
-                "disappointed",
-                "impatient",
+                "design",
+                "chairs",
                 "wine",
                 "vegan",
                 "chef de service",
-                "expensive",
+                "ambiente",
+                "waiting time",
+                "service"
+            ];
+            var words = [
+                {text: "Dessert", weight: 13},
+                {text: "delivery", weight: 20},
+                {text: "take-away", weight: 25},
+                {text: "take-away", weight: 10},
+                {text: "take-away", weight: 20},
+                {text: "take-away", weight: 24},
+                {text: "take-away", weight: 25},
+                {text: "take-away", weight: 26},
+                {text: "take-away", weight: 10},
+                {text: "take-away", weight: 9.4},
+                {text: "take-away", weight: 3},
+                {text: "take-away", weight: 20},
+                {text: "take-away", weight: 21},
+                {text: "take-away", weight: 22},
+                {text: "take-away", weight: 23},
+                {text: "take-away", weight: 35},
+
+
+                /* ... */
             ];
             var word_list=[]
             for (var i=0; i<list.length; i++)
                 word_list.push({text:list[i], weight:(Math.random() * 4 + 10)})
             $(document).ready(function() {
-                $("#wordcloud").jQCloud(word_list);
+                $("#wordcloud").jQCloud(word_list,{colors: ['#fa5c7c','#0acf97','#ffbc00' ],});
             });
         </script>
         <style type="text/css">
@@ -787,10 +828,10 @@
                 font-family: Helvetica, Arial, sans-serif;
             }
             #wordcloud {
-                margin: 30px auto;
+                margin: 10px auto;
                 padding: 100px;
-                width: 600px;
-                height: 371px;
+                width: 1000px;
+                height: 550px;
                 border: none;
                 overflow: visible;
             }
