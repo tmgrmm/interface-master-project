@@ -1,14 +1,19 @@
 var options = {
     series: [{
         name: 'Your rank',
-        data: [23, 24, 23, 21, 23, 22]
+        data: [23, 25, 23, 21, 24, 22]
     }],
     chart: {
         toolbar: {
             show: false
         },
         height: 350,
-        type: 'bar',
+        type: 'line',
+    },
+    stroke: {
+        show: true,
+        curve: 'straight',
+        width: 3,
     },
     plotOptions: {
         bar: {
@@ -32,7 +37,7 @@ var options = {
     },
 
     xaxis: {
-        categories: ["Nov", "Dec", "Jan", "Feb", "Mar", "Apr"],
+        categories: ["Mar", "Apr", "May", "Jun", "Jul", "Aug"],
         position: 'bottom',
         axisBorder: {
             show: false
@@ -57,8 +62,7 @@ var options = {
         }
     },
     yaxis: {
-        min: 20,
-        max: 25,
+        reversed: true,
         axisBorder: {
             show: false
         },

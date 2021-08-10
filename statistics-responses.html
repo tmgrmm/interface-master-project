@@ -469,8 +469,9 @@
                                             <a class="btn btn-secondary dropdown-toggle mr-2" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 All Platforms
                                             </a>
-                                            
+
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" href="#">All Platforms</a>
                                                 <a class="dropdown-item" href="#">TripAdvisor</a>
                                                 <a class="dropdown-item" href="#">Facebook</a>
                                                 <a class="dropdown-item" href="#">Google</a>
@@ -478,17 +479,16 @@
                                         </div>
                                         <form class="form-inline">
                                             <div class="form-group">
+
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control form-control-light" id="dash-daterange">
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text bg-info border-primary text-white">
-                                                            <i class="mdi mdi-calendar-range font-13"></i>
-                                                        </span>
+                                                    <div id="reportrange" class="form-control form-control-light" data-toggle="date-picker-range" data-target-display="#selectedValue"  data-cancel-class="btn-danger">
+                                                        <i class="mdi mdi-calendar"></i>&nbsp;
+                                                        <span id="selectedValue"></span> <i class="mdi mdi-menu-down"></i>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="javascript: void(0);" class="btn btn-info ml-2">
-                                                <i class="mdi mdi-autorenew"></i>
+                                            <a href="statistics-responses.html" class="btn btn-info ml-2">
+                                                <i class="mdi mdi-filter-remove"></i>
                                             </a>
                                         </form>
                                     </div>

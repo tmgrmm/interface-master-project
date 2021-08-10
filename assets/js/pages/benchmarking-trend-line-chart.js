@@ -1,7 +1,7 @@
 var options = {
     series: [{
         name: "Bon Appétit (Me)",
-        data: [22, 26, 27, 28, 24, 22]
+        data: [23, 25, 23, 21, 24, 22]
     },
         {
             name: "Competitor A",
@@ -23,7 +23,7 @@ var options = {
     chart: {toolbar: {
             show: false
         },
-        height: 450,
+        height: 650,
         type: 'line',
         zoom: {
             enabled: false
@@ -51,7 +51,7 @@ var options = {
         }
     },
     xaxis: {
-        categories: ['Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr'],
+        categories: ["Mar", "Apr", "May", "Jun", "Jul", "Aug"],
     },
     tooltip: {
         y: [
@@ -80,7 +80,8 @@ var options = {
     },
     grid: {
         borderColor: '#f1f1f1',
-    }
+    },
+    yaxis: {reversed: true}
 };
 
 var chart = new ApexCharts(document.querySelector("#benchmarking-trend-line-chart"), options);

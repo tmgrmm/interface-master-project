@@ -44,7 +44,7 @@ var options = {
     fontSize: '15px'
   },
   xaxis: {
-    categories: ['Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr'],
+    categories: ["Mar", "Apr", "May", "Jun", "Jul", "Aug"],
   },
   yaxis: [{
     min: 0,

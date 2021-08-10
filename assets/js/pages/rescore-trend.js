@@ -29,7 +29,7 @@ var options = {
         },
     },
     xaxis: {
-        categories: ['Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr'],
+        categories: ["Mar", "Apr", "May", "Jun", "Jul", "Aug"],
     }
 };
 

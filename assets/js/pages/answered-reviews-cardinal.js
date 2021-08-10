@@ -1,12 +1,13 @@
 var options = {
-    series: [70.9,58,71,100],
+    series: [53,73.5,100],
     chart: {
-        height: 250,
+        height: 350,
         width: '100%',
         type: 'radialBar',
     },
     plotOptions: {
         radialBar: {
+            customScale: 2,
             dataLabels: {
                 name: {
                     fontSize: '22px',
@@ -20,18 +21,18 @@ var options = {
                     fontSize: '18px',
                     formatter: function (w) {
                         // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
-                        return "90/127"
+                        return "82/119"
                     }
                 }
             }
         }
     },
-    colors: ['#00b0db','#00e396','#ffb01a', '#ff4560'],
-    labels: ['Total 90/127','Positive 40/68', 'Neutral 23/32', 'Negative 27/27'],
+    colors: ['#00e396','#ffb01a', '#ff4560'],
+    labels: ['Positive 32/60', 'Neutral 25/34', 'Negative 25/25'],
     legend: {
         show: true,
         fontSize: '14px',
-        position: 'right',
+        position: 'bottom',
         horizontalAlign: 'center',
 
 
@@ -41,4 +42,3 @@ var options = {
 
 var chart = new ApexCharts(document.querySelector("#answered-reviews-cardinal"), options);
 chart.render();
-

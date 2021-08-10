@@ -12,7 +12,7 @@ var options = {
     chart: { toolbar: {
             show: false
         },
-        height: 350,
+        height: 400,
         type: 'radar',
     },
     colors: ['#00b0db','#00e396','#ffb01a', '#ff4560'],

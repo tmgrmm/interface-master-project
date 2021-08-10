@@ -1,7 +1,7 @@
 var options = {
     series: [{
             name: "Bon Appétit",
-            data: [27, 25, 22, 21, 20, 22]
+            data: [23, 25, 23, 21, 24, 22]
         },
             {
                 name: "Cardinal",
@@ -11,7 +11,7 @@ var options = {
         chart: {toolbar: {
                 show: false
             },
-            height: 250,
+            height: 400,
             type: 'line',
             zoom: {
                 enabled: false
@@ -39,7 +39,7 @@ var options = {
             }
         },
         xaxis: {
-            categories: ['Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr'],
+            categories: ["Mar", "Apr", "May", "Jun", "Jul", "Aug"],
         },
         tooltip: {
             y: [
@@ -68,7 +68,8 @@ var options = {
         },
         grid: {
             borderColor: '#f1f1f1',
-        }
+        },
+        yaxis: {reversed: true,}
     };
 
 var chart = new ApexCharts(document.querySelector("#rankingTrendComparison-2"),options);

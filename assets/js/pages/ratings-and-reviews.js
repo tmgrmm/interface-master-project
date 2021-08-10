@@ -51,7 +51,7 @@ var optionsLine1 = {
         }
     },
     xaxis: {
-        categories: ['Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr'],
+        categories: ["Mar", "Apr", "May", "Jun", "Jul", "Aug"],
     },
     yaxis: {
         labels: {
@@ -140,7 +140,7 @@ var optionsLine2 = {
         }
     },
     xaxis: {
-        categories: ['Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr'],
+        categories: ["Mar", "Apr", "May", "Jun", "Jul", "Aug"],
     },
     yaxis: {
         labels: {

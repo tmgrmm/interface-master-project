@@ -469,8 +469,9 @@
                                             <a class="btn btn-secondary dropdown-toggle mr-2" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 All Platforms
                                             </a>
-                                            
+
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" href="#">All Platforms</a>
                                                 <a class="dropdown-item" href="#">TripAdvisor</a>
                                                 <a class="dropdown-item" href="#">Facebook</a>
                                                 <a class="dropdown-item" href="#">Google</a>
@@ -478,17 +479,16 @@
                                         </div>
                                         <form class="form-inline">
                                             <div class="form-group">
+
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control form-control-light" id="dash-daterange">
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text bg-info border-primary text-white">
-                                                            <i class="mdi mdi-calendar-range font-13"></i>
-                                                        </span>
+                                                    <div id="reportrange" class="form-control form-control-light" data-toggle="date-picker-range" data-target-display="#selectedValue"  data-cancel-class="btn-danger">
+                                                        <i class="mdi mdi-calendar"></i>&nbsp;
+                                                        <span id="selectedValue"></span> <i class="mdi mdi-menu-down"></i>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="javascript: void(0);" class="btn btn-info ml-2">
-                                                <i class="mdi mdi-autorenew"></i>
+                                            <a href="analytics-trend-analysis.html" class="btn btn-info ml-2">
+                                                <i class="mdi mdi-filter-remove"></i>
                                             </a>
                                         </form>
                                     </div>
@@ -545,29 +545,62 @@
                                                 </ul> <!-- end nav-->
 
                                                 <div class="tab-content">
-                                                    <div class="tab-pane" id="all">
+                                                    <div class="tab-pane active" id="all">
                                                         <div class="row">
                                                             <div class="col-12">
+                                                                <div class="mt-5 mb-5">
+                                                                    <div class="container">
+                                                                        <div class="row justify-content-center">
+                                                                            <div class="col-12">
+
+                                                                                <div class="text-center">
+                                                                                    <img src="assets/images/maintenance.svg" height="140" alt="File not found Image">
+                                                                                    <h3 class="mt-4">Site is still in Developement</h3>
+                                                                                    <p class="text-muted">We're still designing this page. It'll be available as soon as possible.</p>
+
+                                                                                    <div class="row mt-5">
+                                                                                        <div class="col-md-6">
+                                                                                            <div class="text-center mt-3 pl-1 pr-1">
+                                                                                                <i class="dripicons-jewel bg-primary maintenance-icon text-white mb-2"></i>
+                                                                                                <h5 class="text-uppercase">Why is the Site Not Avialable?</h5>
+                                                                                                <p class="text-muted">There still need to be discussed which content should be presented here.</p>
+                                                                                            </div>
+                                                                                        </div> <!-- end col-->
+                                                                                        <div class="col-md-6">
+                                                                                            <div class="text-center mt-3 pl-1 pr-1">
+                                                                                                <i class="dripicons-clock bg-primary maintenance-icon text-white mb-2"></i>
+                                                                                                <h5 class="text-uppercase">When will it be available?</h5>
+                                                                                                <p class="text-muted">The group is planning to give a suggestion as soon as possible.</p>
+                                                                                            </div>
+                                                                                        </div> <!-- end col-->
+                                                                                    </div> <!-- end row-->
+                                                                                </div> <!-- end /.text-center-->
+
+                                                                            </div> <!-- end col -->
+                                                                        </div>
+                                                                        <!-- end row -->
+                                                                    </div>
+                                                                    <!-- end container -->
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="tab-pane show active" id="meals">
-                                                        <p>...</p>
+                                                        <p></p>
                                                     </div>
                                                     <div class="tab-pane" id="location">
-                                                        <p>...</p>
+                                                        <p></p>
                                                     </div>
                                                     <div class="tab-pane" id="service">
-                                                        <p>...</p>
+                                                        <p></p>
                                                     </div>
                                                     <div class="tab-pane" id="ambiance">
-                                                        <p>...</p>
+                                                        <p></p>
                                                     </div>
                                                     <div class="tab-pane" id="price">
-                                                        <p>...</p>
+                                                        <p></p>
                                                     </div>
                                                     <div class="tab-pane" id="features">
-                                                        <p>...</p>
+                                                        <p></p>
                                                     </div>
 
                                                 </div>
