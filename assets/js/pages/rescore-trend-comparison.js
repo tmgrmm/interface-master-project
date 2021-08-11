@@ -6,6 +6,10 @@ var options = {
             {
                 name: "Cardinal",
                 data: [75.5,77,80,74.5,75,76]
+            },
+            {
+                name: "Crown Phoenix Hotel",
+                data: [82.5,80,71,72,76,77.5]
             }
         ],
         chart: {toolbar: {

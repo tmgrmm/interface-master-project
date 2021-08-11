@@ -7,6 +7,10 @@ var options = {
         {
             name: "Cardinal",
             data: [3, 3.2, 4.1, 3.6, 4, 4.5]
+        },
+        {
+            name: "Crown Phoenix Hotel",
+            data: [3.5, 3.5, 4.7, 4.8, 3.2, 3.9]
         }
     ],
     chart: { toolbar: {
@@ -27,7 +31,7 @@ var options = {
         enabled: true,
         background: {
             enabled: true,
-            borderRadius:2,
+            borderRadius:1,
         }
     }
 };

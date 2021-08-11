@@ -6,7 +6,11 @@ var options = {
             {
                 name: "Cardinal",
                 data: [40,43,45,44,40,39]
-            }
+            },
+        {
+            name: "Crown Phoenix Hotel",
+            data: [66,68,70,80,88,87]
+        }
         ],
         chart: {toolbar: {
                 show: false
@@ -46,21 +50,21 @@ var options = {
                 {
                     title: {
                         formatter: function (val) {
-                            return val;
+                            return val + ' (Schaffhausen)';
                         }
                     }
                 },
                 {
                     title: {
                         formatter: function (val) {
-                            return val;
+                            return val +' (Schaffhausen)';
                         }
                     }
                 },
                 {
                     title: {
                         formatter: function (val) {
-                            return val;
+                            return val+' (Zurich)';
                         }
                     }
                 }

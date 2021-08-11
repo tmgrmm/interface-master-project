@@ -441,12 +441,10 @@
                         <div class="navbar-custom-left-col">
                             <div class="dropdown">
                                 <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Choose Venues
+                                    All Venues
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Bon Appétit</a>
-                                    <a class="dropdown-item" href="#">Cardinal</a>
-                                    <a class="dropdown-item" href="#">Crown Phoenix Hotel</a>
+                                    <a class="dropdown-item" href="#">All Venues</a>
                                 </div>
                             </div>
                         </div>
@@ -496,20 +494,87 @@
                                 <!-- end page title -->
                             </div>
                         </div>     
-                        <!-- end page title --> 
+                        <!-- end page title -->
 
 
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="header-title mb-2">Overview</h4>
+                                        <div class="table-responsive">
+                                            <table class="table table-sm table-centered mb-0 font-14">
+                                                <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th><img class="tiny-logo" src="assets/images/re_logo_32x24.svg" alt="re" height="16"> Score</th>
+                                                    <th>Rank</th>
+                                                    <th>Response Rate</th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th style="width: 20%;">Average Response Time</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>Bon Appetit</td>
+                                                    <td>84.0 <span class="text-danger mr-2" style="font-size: 100%"><span class="mdi mdi-arrow-down-bold"></span>0.5</span></td>
+                                                    <td>22nd (in Schaffhausen)<span class="text-success mr-2" style="font-size: 100%"><span class="mdi mdi-arrow-up-bold"></span>2</span></td>
+                                                    <td>
+                                                        <div class="progress progress-xl">
+                                                            <div class="progress-bar bg-info" role="progressbar" style="width: 70.9%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">70.9%</div>
+                                                        </div>
+                                                    </td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>3 Days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cardinal</td>
+                                                    <td>76.0 <span class="text-success mr-2" style="font-size: 100%"><span class="mdi mdi-arrow-up-bold"></span>2.0</span></td>
+                                                    <td>39th (in Schaffhausen)<span class="text-success mr-2" style="font-size: 100%"><span class="mdi mdi-arrow-up-bold"></span>1</span></td>
+                                                    <td>
+                                                        <div class="progress progress-xl">
+                                                            <div class="progress-bar bg-info" role="progressbar" style="width: 68.7%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">68.7%</div>
+                                                        </div>
+                                                    </td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>2 Days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Crown Phoenix Hotel</td>
+                                                    <td>77.5 <span class="text-success mr-2" style="font-size: 100%"><span class="mdi mdi-arrow-up-bold"></span>1.5</span></td>
+                                                    <td>87th (in Zurich)<span class="text-success mr-2" style="font-size: 100%"><span class="mdi mdi-arrow-up-bold"></span>1</span></td>
+                                                    <td>
+                                                        <div class="progress progress-xl">
+                                                            <div class="progress-bar bg-info" role="progressbar" style="width: 78.4%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">78.4%</div>
+                                                        </div>
+                                                    </td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>1 Days</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div> <!-- end table-responsive-->
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div> <!-- end col-->
+                        </div>
 
+
+<!--
                         <div class="row">
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                 <div class="card">
                                     <div class="card-body">
                                         <h2 class="text-uppercase mt-0" align="center">Bon Appétit</h2>
                                         <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
-                                        <!-re:Score -->
+
                                         <h4 class="header-title mb-4"><img class="tiny-logo" src="assets/images/re_logo_32x24.svg" alt="re" height="24"> Score <span class="text-danger mr-2" style="font-size: 130%"><span class="mdi mdi-arrow-down-bold"></span>0.5</span></h4>
                                         <div id="chart" class="apex-charts" ></div>
-                                        <!-Rank -->
+
                                         <h4 class="header-title mb-4">Ranking</h4>
                                         <div class="total-reviews-box">
                                             <h2 class="my-2" align="center" id="active-users-count">Rank: </h2>
@@ -526,28 +591,28 @@
                                             <strong class="total-reviews-box-num">3 Days</strong>
                                         </div>
                                         <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
-                                        <!-Reponses -->
+
 
 
                                     </div>
-                                    <!-- end card body-->
+
                                 </div>
-                                <!-- end card -->
+
                             </div>
-                            <!-- end col-->
 
 
 
-                            <!-- Cardinal-->
+
+
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                                 <div class="card">
                                     <div class="card-body">
                                         <h2 class="text-uppercase mt-0" align="center">Cardinal</h2>
                                         <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
-                                        <!-re:Score -->
+
                                         <h4 class="header-title mb-4"><img class="tiny-logo" src="assets/images/re_logo_32x24.svg" alt="re" height="24"> Score <span class="text-success mr-2" style="font-size: 130%"><span class="mdi mdi-arrow-up-bold"></span>2</span></h4>
                                         <div id="reScoreCardinal" class="apex-charts" ></div>
-                                        <!-Rank -->
+
                                         <h4 class="header-title mb-4">Ranking</h4>
                                         <div class="total-reviews-box">
                                             <h2 class="my-2" align="center" id="active-users-count">Rank: </h2>
@@ -557,7 +622,7 @@
                                         <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
                                         <h4 class="header-title mb-4">Answered Reviews</h4>
                                         <div id="answered-reviews-cardinal" class="apex-charts" ></div>
-                                        <!-Statistics -->
+
                                         <h4 class="header-title mb-4">Response Rate</h4>
                                         <div id="response-rate-chart-cardinal" class="apex-charts"></div>
                                         <div class="total-reviews-box">
@@ -565,17 +630,17 @@
                                             <strong class="total-reviews-box-num">3.5 Days</strong>
                                         </div>
                                         <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
-                                        <!-Reponses -->
+
 
 
 
 
                                     </div>
-                                    <!-- end card body-->
+
                                 </div>
-                                <!-- end card -->
+
                             </div>
-                            <!-- end col-->
+
 
 
                         </div>
