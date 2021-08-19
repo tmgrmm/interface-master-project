@@ -1,7 +1,7 @@
 var options = {
-    series: [58,71,100],
+    series: [58,71,100,75],
     chart: {
-        height: 350,
+        height:375,
         width: '100%',
         type: 'radialBar',
     },
@@ -27,11 +27,11 @@ var options = {
             }
         }
     },
-    colors: ['#00e396','#ffb01a', '#ff4560'],
-    labels: ['Positive 40/68', 'Neutral 23/32', 'Negative 27/27'],
+    colors: ['#00e396','#ffb01a', '#ff4560','#caced2','#6c747c'],
+    labels: ['Positive 40/68', 'Neutral 23/32', 'Negative 27/27','Not rated 3/4'],
     legend: {
         show: true,
-        fontSize: '14px',
+        fontSize: '12px',
         position: 'bottom',
         horizontalAlign: 'center',
 

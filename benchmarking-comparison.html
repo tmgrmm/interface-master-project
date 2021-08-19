@@ -57,7 +57,7 @@
                         <li class="side-nav-item">
                             <a href="to-do.html" class="side-nav-link">
                                 <i class="uil-edit"> </i>
-                                <span class="badge badge-success float-right">2</span>
+                                <span class="badge badge-success float-right">3</span>
                                 <span>To-Do</span>
                             </a>
                         </li>
@@ -205,7 +205,10 @@
                             </a>
                             <ul class="side-nav-second-level mm-collapse" aria-expanded="false">
                                 <li>
-                                    <a href="benchmarking-internal.html">Internal</a>
+                                    <a href="benchmarking-internal.html">Overview</a>
+                                </li>
+                                <li>
+                                    <a href="benchmarking-comparison.html">Comparison</a>
                                 </li>
                                 <li>
                                     <a href="benchmarking-external.html">External</a>
@@ -463,339 +466,186 @@
                             <div class="col-12">
                                 <!-- start page title -->
                                 <div class="page-heading d-lg-flex justify-content-between align-items-center pt-2 pb-2">
-                                    <h4 class="page-heading-title">To Do </h4>
+                                    <h4 class="page-heading-title">Benchmarking - Comparison </h4>
+                                    <div class="page-heading-right d-flex">
+                                        <div class="dropdown">
+                                            <a class="btn btn-secondary dropdown-toggle mr-2" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                All Platforms
+                                            </a>
+
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" href="#">All Platforms</a>
+                                                <a class="dropdown-item" href="#">TripAdvisor</a>
+                                                <a class="dropdown-item" href="#">Facebook</a>
+                                                <a class="dropdown-item" href="#">Google</a>
+                                            </div>
+                                        </div>
+                                        <form class="form-inline">
+                                            <div class="form-group">
+
+                                                <div class="input-group">
+                                                    <div id="reportrange" class="form-control form-control-light" data-toggle="date-picker-range" data-target-display="#selectedValue"  data-cancel-class="btn-danger">
+                                                        <i class="mdi mdi-calendar"></i>&nbsp;
+                                                        <span id="selectedValue"></span> <i class="mdi mdi-menu-down"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="analytics-trend-analysis.html" class="btn btn-info ml-2">
+                                                <i class="mdi mdi-filter-remove"></i>
+                                            </a>
+                                        </form>
+                                    </div>
                                 </div>
                                 <!-- end page title -->
                             </div>
                         </div>     
                         <!-- end page title -->
 
+
+
+
                         <div class="row">
-                            <div class="col-12">
-                                <div class="card widget-inline">
-                                    <div class="card-body p-0">
-                                        <div class="row no-gutters">
-                                            <div class="col-sm-4 col-xl-4">
-                                                <div class="card shadow-none m-0 border-left">
-                                                    <div class="card-body text-center">
-                                                        <i class="mdi mdi-comment-text-outline" style="font-size: 24px;"></i>
-                                                        <h1><span class="badge badge-info float-center">0</span></h1>
-                                                        <p class="text-muted font-15 mb-0">Responses to publish</p>
-                                                    </div>
-                                                </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="card">
+                                    <div class="card-body" >
+                                        <div class="dropdown" align="center">
+                                            <button class="btn btn-lg btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Bon Appétit
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Bon Appétit</a>
+                                                <a class="dropdown-item" href="#">Cardinal</a>
+                                                <a class="dropdown-item" href="#">Crown Phoenix Hotel</a>
                                             </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                        <h4 class="header-title mb-4">Average Rating</h4>
+                                        <div class="table-responsive">
+                                            <table class="table rating-table table-sm table-borderless table-centered mb-0">
+                                                <tbody>
+                                                <tr align="center">
+                                                    <td class="text-nowrap">
+                                                        <span class="month-avg">4.3</span>
+                                                        <i class="mdi mdi-star text-warning"
+                                                           style="font-size: 1.3rem;"></i>
+                                                        <i class="mdi mdi-star text-warning"
+                                                           style="font-size: 1.3rem;"></i>
+                                                        <i class="mdi mdi-star text-warning"
+                                                           style="font-size: 1.3rem;"></i>
+                                                        <i class="mdi mdi-star text-warning"
+                                                           style="font-size: 1.3rem;"></i>
+                                                        <i class="mdi mdi-star-half-full text-warning"
+                                                           style="font-size: 1.3rem;"></i>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                        <h4 class="header-title mb-4"><img class="tiny-logo" src="assets/images/re_logo_32x24.svg" alt="re" height="24"> Score <span class="text-danger mr-2" style="font-size: 130%"><span class="mdi mdi-arrow-down-bold"></span>0.5</span></h4>
+                                        <div id="chart" class="apex-charts" ></div>
+                                        <h4 class="header-title mb-4">Answered Reviews</h4>
+                                        <div id="answered-reviews" class="apex-charts"></div>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                        <h4 class="header-title mb-4">Response Rate</h4>
+                                        <div id="response-rate-chart" class="apex-charts"></div>
+                                        <h4 class="header-title mb-4">Average Response Time</h4>
+                                        <div class="card-body text-center">
+                                            <h1 style = font-size:58px><span class="badge badge-info float-center">3 Days</span></h1>
+                                            <p class="text-muted font-15 mb-0">For reviews</p>
+                                        </div>
+                                        <h4 class="header-title mb-4">Review Distribution</h4>
+                                        <div id="reviews-distribution-bonappetit" class="apex-charts"></div>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
 
-                                            <div class="col-sm-4 col-xl-4">
-                                                <div class="card shadow-none m-0 border-left">
-                                                    <div class="card-body text-center">
-                                                        <i class="mdi mdi-comment-question-outline" style="font-size: 24px;"></i>
-                                                        <h1><span class="badge badge-info float-center">1</span></h1>
-                                                        <p class="text-muted font-15 mb-0">Feedbacks to give</p>
-                                                    </div>
-                                                </div>
-                                            </div>
 
-                                            <div class="col-sm-4 col-xl-4">
-                                                <div class="card shadow-none m-0 border-left">
-                                                    <div class="card-body text-center">
-                                                        <i class="mdi mdi-comment-quote-outline" style="font-size: 24px;"></i>
-                                                        <h1><span class="badge badge-info float-center">1</span></h1>
-                                                        <p class="text-muted font-15 mb-0">Assigned reviews</p>
-                                                    </div>
-                                                </div>
-                                            </div>
 
-                                        </div> <!-- end row -->
                                     </div>
-                                </div> <!-- end card-box-->
-                            </div> <!-- end col-->
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="dropdown" align="center">
+                                            <button class="btn btn-lg btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Cardinal
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Bon Appétit</a>
+                                                <a class="dropdown-item" href="#">Cardinal</a>
+                                                <a class="dropdown-item" href="#">Crown Phoenix Hotel</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                        <h4 class="header-title mb-4">Average Rating</h4>
+                                        <div class="table-responsive">
+                                            <table class="table rating-table table-sm table-borderless table-centered mb-0">
+                                                <tbody>
+                                                <tr align="center">
+                                                    <td class="text-nowrap">
+                                                        <span class="month-avg">4.1</span>
+                                                        <i class="mdi mdi-star text-warning"
+                                                           style="font-size: 1.3rem;"></i>
+                                                        <i class="mdi mdi-star text-warning"
+                                                           style="font-size: 1.3rem;"></i>
+                                                        <i class="mdi mdi-star text-warning"
+                                                           style="font-size: 1.3rem;"></i>
+                                                        <i class="mdi mdi-star text-warning"
+                                                           style="font-size: 1.3rem;"></i>
+                                                        <i class="mdi mdi-star-outline text-warning"
+                                                           style="font-size: 1.3rem;"></i>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                        <h4 class="header-title mb-4"><img class="tiny-logo" src="assets/images/re_logo_32x24.svg" alt="re" height="24"> Score <span class="text-success mr-2" style="font-size: 130%"><span class="mdi mdi-arrow-up-bold"></span>2</span></h4>
+                                        <div id="reScoreCardinal" class="apex-charts" ></div>
+                                        <h4 class="header-title mb-4">Answered Reviews</h4>
+                                        <div id="answered-reviews-cardinal" class="apex-charts" ></div>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                        <h4 class="header-title mb-4">Response Rate</h4>
+                                        <div id="response-rate-chart-cardinal" class="apex-charts"></div>
+                                        <h4 class="header-title mb-4">Average Response Time</h4>
+                                        <div class="card-body text-center">
+                                            <h1 style = font-size:58px><span class="badge badge-info float-center">2 Days</span></h1>
+                                            <p class="text-muted font-15 mb-0">For reviews</p>
+                                        </div>
+                                        <h4 class="header-title mb-4">Review Distribution</h4>
+                                        <div id="reviews-distribution-cardinal" class="apex-charts"></div>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+
+
+
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
                         </div>
                         <!-- end row-->
 
 
 
-                        <!-- response to publish -->
-                        <div class="mt-2">
-                            <a class="text-dark" data-toggle="collapse" href="#todayTasks" aria-expanded="false"
-                               aria-controls="todayTasks">
-                                <h5 class="m-0 pb-2">
-                                    <i class='uil uil-angle-down font-18'></i> Response to publish <span class="text-muted">(0)</span>
-                                </h5>
-                            </a>
-
-                            <div class="collapse show" id="todayTasks">
-                                <div class="card mb-0">
-                                    <div class="card-body">
-                                        <!-- task -->
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="alert alert-success" role="alert">
-                                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                    <i class="dripicons-checkmark me-2"></i> The response has been <strong>published</strong>.
-                                                </div>
 
 
-                                            </div>
-
-
-
-
-                                            </div>
-                                        </div>
-
-
-
-
-
-
-                                    </div> <!-- end card-body-->
-                                </div> <!-- end card -->
-                            </div> <!-- end .collapse-->
-
-                        <!-- feedback to give -->
-                        <div class="mt-4">
-
-                            <a class="text-dark" data-toggle="collapse" href="#upcomingTasks" aria-expanded="false" aria-controls="upcomingTasks">
-                                <h5 class="m-0 pb-2">
-                                    <i class='uil uil-angle-down font-18'></i>Feedback to give <span class="text-muted">(1)</span>
-                                </h5>
-                            </a>
-
-                            <div class="collapse show" id="upcomingTasks">
-                                <div class="card mb-0">
-                                    <div class="card-body">
-                                        <!-- task -->
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="table-responsive">
-                                                    <table class="table table-nowrap mb-0">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <img class="platform-logo" src="assets/images/facebook.svg" alt="facebook logo" height="20" />
-                                                                <span>&nbsp;Bon Appétit</span>
-                                                            </td>
-                                                            <td>
-                                                                <span>04.08.2021</span>
-                                                            </td>
-                                                            <td>
-                                                                <div class="text-nowrap">
-                                                                    <span>3.5  </span>
-                                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                                    <i class="mdi mdi-star-half-full text-warning" style="font-size: 1.1rem;"></i>
-                                                                    <i class="mdi mdi-star-outline text-warning" style="font-size: 1.1rem;"></i>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <span>DE</span>
-                                                            </td>
-                                                            <td align="right">
-                                                                <span class="badge badge-danger-lighten">Feedback needed</span>
-                                                            </td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-1 col-md-12 col-sm-12 col-xs-12" align="center">
-                                                <span><b><i>Lara:</i></b>
-                                                    </div>
-                                                    <div class="col-lg-11 col-md-12 col-sm-12 col-xs-12">
-                                                        <span>Tolle Location, mit gedeckter Terrasse, Bar & Lounge. Die Bento Boxes sind ideal am Mittag. Die Tagesmenues sind ebenfalls ganz ansprechend und der Service war bestens. Jedoch hatte ich direkt vor dem Bon Appétit mein Auto parkiert und eine Parkbusse erhalten. Die Parkplätze waren klar angeschrieben mit gehörem zum Restaurant. Dies ist für mich unverständlich, da ich Kunde des Restaurantes war. Bitte um Aufklärung.</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
-                                                <div class="row">
-                                                    <div class="col-12" >
-                                                        <ul class="conversation-list" data-simplebar style="max-height: 537px">
-                                                            <li class="clearfix">
-                                                                <div class="chat-avatar">
-                                                                    <img src="assets/images/re_logo_32x24.svg" alt="dominic" class="rounded"  />
-                                                                    <i style = font-size:12px>Author</i>
-                                                                </div>
-                                                                <div class="conversation-text">
-                                                                    <div class="ctext-wrap">
-                                                                        <i>DECLINED RESPONSE, 05.08.2021</i>
-                                                                        <p>
-                                                                            Liebe Lara, erstmals vielen Dank für dein Feedback. Bezüglich des Parkplatzes tut es uns leid, aber dieser gehört der Stadt Schaffhausen und nicht uns. Das Schild verweist nur zu den Parkplatzmöglichkeiten.
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                            <li class="clearfix odd">
-                                                                <div class="chat-avatar">
-                                                                    <img src="assets/images/users/avatar-1.jpg" alt="dominic" class="rounded" />
-                                                                    <i style = font-size:12px>Alex</i>
-                                                                </div>
-                                                                <div class="conversation-text">
-                                                                    <div class="ctext-wrap">
-                                                                        <i>REASON FOR DECLINING, 06.08.2021</i>
-                                                                        <p>
-                                                                            Die vorgeschlagene Antwort ist nicht korrekt. Die Angaben zum Parking stimmen nicht.
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-
-                                                            </li>
-                                                            <li class="clearfix">
-                                                                <div class="chat-avatar">
-                                                                    <img src="assets/images/re_logo_32x24.svg" alt="dominic" class="rounded"  />
-                                                                    <i style = font-size:12px>Author</i>
-                                                                </div>
-                                                                <div class="conversation-text">
-                                                                    <div class="ctext-wrap">
-                                                                        <i>FEEDBACK NEEDED, 06.08.2021</i>
-                                                                        <p>
-                                                                            Hey Alex, wir bräuchten noch die Angaben, was von unserer vorgeschlagenen Antwort vom 05.08.2021 bezüglich des Parkings nicht stimmt. Gehören die Parkplätze euch? Wenn ja, was war dann der Grund für die Busse? Sobald ich diese Angaben habe, werde ich eine neue Antwort erfassen. Gruss Author.
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-
-                                                        </ul>
-                                                        <div class="row">
-                                                            <div class="col-12" >
-                                                                <div class="mt-2 bg-light p-3 rounded">
-                                                                    <form class="needs-validation" novalidate="" name="chat-form" id="chat-form">
-                                                                        <div class="row">
-                                                                            <div class="col-1" align="center">
-                                                                                <img src="assets/images/users/avatar-1.jpg" alt="dominic" height="30" class="rounded" />
-                                                                            </div>
-
-                                                                            <div class="col mb-2 mb-sm-0">
-                                                                                <input type="text" class="form-control border-0" placeholder="Enter your feedback for the author" required="">
-                                                                                <div class="invalid-feedback">
-
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-sm-auto">
-                                                                                <div class="btn-group">
-                                                                                    <button type="submit" class="btn btn-info chat-send btn-block">send</button>
-                                                                                </div>
-                                                                            </div> <!-- end col -->
-                                                                        </div> <!-- end row-->
-                                                                    </form>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-
-                                        </div> <!-- end card-body-->
-                                </div> <!-- end card -->
-                            </div> <!-- end collapse-->
-                        </div>
-                        <!-- end upcoming tasks -->
-
-                        <!-- assigned reviews -->
-                        <div class="mt-4 mb-4">
-                            <a class="text-dark" data-toggle="collapse" href="#otherTasks" aria-expanded="false" aria-controls="otherTasks">
-                                <h5 class="m-0 pb-2">
-                                    <i class='uil uil-angle-down font-18'></i>Assigned reviews <span class="text-muted">(1)</span>
-                                </h5>
-                            </a>
-
-                            <div class="collapse show" id="otherTasks">
-                                <div class="card mb-0">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" align="left">
-                                                <span><b><i>Assigned by Markus on 02.07.2021</i></b></span>
-                                                <a href="javascript: void(0);" class="action-icon">&nbsp;&nbsp; remove assignment <i class="mdi mdi-delete"></i></a>
-
-                                            </div>
-                                        </div>
-                                        <!-- task -->
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="table-responsive">
-                                                    <table class="table table-nowrap mb-0">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <img class="platform-logo" src="assets/images/google.svg" alt="google logo" height="20" />
-                                                                <span>&nbsp; Bon Appétit</span>
-                                                            </td>
-                                                            <td>
-                                                                <span>30.06.2021</span>
-                                                            </td>
-                                                            <td>
-                                                                <div class="text-nowrap">
-                                                                    <span>2.0  </span>
-                                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                                    <i class="mdi mdi-star-outline text-warning" style="font-size: 1.1rem;"></i>
-                                                                    <i class="mdi mdi-star-outline text-warning" style="font-size: 1.1rem;"></i>
-                                                                    <i class="mdi mdi-star-outline text-warning" style="font-size: 1.1rem;"></i>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <span>ENG</span>
-                                                            </td>
-                                                            <td class="table-action" style="width: 90px;" align="right">
-                                                                <span class="badge badge-success-lighten">Re:sponded</span>
-                                                            </td>
-
-                                                            </td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-lg-1 col-md-12 col-sm-12 col-xs-12" align="center">
-                                                        <span><b><i>Nick:</i></b></span>
-                                                    </div>
-                                                    <div class="col-lg-11 col-md-12 col-sm-12 col-xs-12">
-                                                        <span>We went here without a reservation. Of course we can understand that without reservation is not possible to have a place but is not needed to shout potential customers.
-                                                            Learn some welcome skills, not all is instant money in this life.</span>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12" >
-                                                        <div class="mt-2 bg-light p-3 rounded">
-                                                            <form class="needs-validation" novalidate="" name="chat-form" id="chat-form">
-                                                                <div class="row">
-                                                                    <div class="col-lg-1 col-md-12 col-sm-12 col-xs-12" align="left">
-                                                                        <img class="tiny-logo" src="assets/images/re_logo_32x24.svg" alt="re" height="35" class="img-thumbnail" >
-                                                                        <i style = font-size:12px>02.07.21</i>
-                                                                    </div>
-                                                                    <div class="col-lg-11 col-md-12 col-sm-12 col-xs-12">
-                                                                        <div class="row">
-                                                                            <i><b>Published Response</b> on <b>02.07.2021</b>:</i>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <p>Dear Christian, Very sorry that my staff behaved so unbecoming. On their behalf, I apologise. Sorry again! Best wishes</p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div> <!-- end row-->
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-
-                                    </div> <!-- end card-body-->
-                                </div> <!-- end card -->
-                            </div>
-                        </div>
-
-
-
-
-
-
-
-
-                </div> <!-- container -->
+                        
+                    </div> <!-- container -->
 
                 </div> <!-- content -->
 
@@ -934,8 +784,20 @@
         <!-- Apex charts js -->
         <script src="assets/js/vendor/apexcharts.min.js"></script>
         <script src="assets/js/pages/radial-chart.js"></script>
-            <script src="assets/js/pages/answered-reviews.js"></script>
         <script src="assets/js/pages/rescore-trend.js"></script>
+        <script src="assets/js/pages/radial-chart-cardinal.js"></script>
+        <script src="assets/js/pages/answered-reviews-cardinal.js"></script>
+        <script src="assets/js/pages/rescore-trend-comparison.js"></script>
+        <script src="assets/js/pages/radar-chart-benchmarking-2.js"></script>
+        <script src="assets/js/pages/ranking-trend-comparison-2.js"></script>
+        <script src="assets/js/pages/answered-reviews-response.js"></script>
+        <script src="assets/js/pages/response-rate-bonappetit.js"></script>
+        <script src="assets/js/pages/response-rate-cardinal.js"></script>
+        <script src="assets/js/pages/reviews-distribution-bonappetit.js"></script>
+        <script src="assets/js/pages/reviews-distribution-cardinal.js"></script>
+
+
+
         <!-- <script src="https://apexcharts.com/samples/assets/stock-prices.js"></script> -->
         <!-- <script src="https://apexcharts.com/samples/assets/irregular-data-series.js"></script> -->
         <script src="assets/js/pages/init.apexchart.js" defer></script>
@@ -944,9 +806,6 @@
         <script src="assets/js/vendor/d3.min.js" defer></script>
         <script src="assets/js/vendor/britecharts.min.js" defer></script>
         <script src="assets/js/pages/init.britechart.js" defer></script>
-
-        <!-- Notification -->
-         <script src="assets/js/pages/demo.toastr.js"></script>
         
         <script>
             //default date range picker

@@ -34,11 +34,12 @@ var options = {
 
     xaxis: {
         categories: ["1.0", "2.0", "3.0", "4.0", "5.0"],
+        position: 'top',
         axisBorder: {
             show: false
         },
         axisTicks: {
-            show: true
+            show: false
         },
         crosshairs: {
             fill: {
@@ -53,7 +54,7 @@ var options = {
             }
         },
         tooltip: {
-            enabled: true,
+            enabled: false,
         },
         labels: {
             show: false

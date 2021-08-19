@@ -1,6 +1,6 @@
 var options = {
     chart: {
-        height: 299,
+        height: 274,
         type: "radialBar"
     },
     colors: ['#00b0db'],

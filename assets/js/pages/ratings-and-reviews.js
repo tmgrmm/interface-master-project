@@ -56,7 +56,8 @@ var optionsLine1 = {
     yaxis: {
         labels: {
             minWidth: 40
-        }
+        },
+        title:{text:"Ratings"}
     },
     tooltip: {
         y: [
@@ -145,7 +146,8 @@ var optionsLine2 = {
     yaxis: {
         labels: {
             minWidth: 40
-        }
+        },
+        title:{text:"Reviews"}
     },
     tooltip: {
         y: [
