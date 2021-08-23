@@ -513,6 +513,11 @@
                                                         </a>
                                                     </li>
                                                     <li class="nav-item">
+                                                        <a href="#service" data-toggle="tab" aria-expanded="true" class="nav-link py-2">
+                                                            Service
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
                                                         <a href="#meals" data-toggle="tab" aria-expanded="true" class="nav-link py-2">
                                                             Meals
                                                         </a>
@@ -520,11 +525,6 @@
                                                     <li class="nav-item">
                                                         <a href="#location" data-toggle="tab" aria-expanded="true" class="nav-link py-2">
                                                             Location
-                                                        </a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a href="#service" data-toggle="tab" aria-expanded="true" class="nav-link py-2">
-                                                            Service
                                                         </a>
                                                     </li>
                                                     <li class="nav-item">
@@ -546,52 +546,133 @@
 
                                                 <div class="tab-content">
                                                     <div class="tab-pane active" id="all">
+                                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
                                                         <div class="row">
                                                             <div class="col-12">
-                                                                <div class="mt-5 mb-5">
-                                                                    <div class="container">
-                                                                        <div class="row justify-content-center">
-                                                                            <div class="col-12">
-
-                                                                                <div class="text-center">
-                                                                                    <img src="assets/images/maintenance.svg" height="140" alt="File not found Image">
-                                                                                    <h3 class="mt-4">Site is still in Developement</h3>
-                                                                                    <p class="text-muted">We're still designing this page. It'll be available as soon as possible.</p>
-
-                                                                                    <div class="row mt-5">
-                                                                                        <div class="col-md-6">
-                                                                                            <div class="text-center mt-3 pl-1 pr-1">
-                                                                                                <i class="dripicons-jewel bg-primary maintenance-icon text-white mb-2"></i>
-                                                                                                <h5 class="text-uppercase">Why is the Site Not Avialable?</h5>
-                                                                                                <p class="text-muted">There still need to be discussed which content should be presented here.</p>
-                                                                                            </div>
-                                                                                        </div> <!-- end col-->
-                                                                                        <div class="col-md-6">
-                                                                                            <div class="text-center mt-3 pl-1 pr-1">
-                                                                                                <i class="dripicons-clock bg-primary maintenance-icon text-white mb-2"></i>
-                                                                                                <h5 class="text-uppercase">When will it be available?</h5>
-                                                                                                <p class="text-muted">The group is planning to give a suggestion as soon as possible.</p>
-                                                                                            </div>
-                                                                                        </div> <!-- end col-->
-                                                                                    </div> <!-- end row-->
-                                                                                </div> <!-- end /.text-center-->
-
-                                                                            </div> <!-- end col -->
-                                                                        </div>
-                                                                        <!-- end row -->
+                                                                    <h4 class="header-title mb-2">All Categories Trend </h4>
+                                                                    <div id="categories-line-chart" class="apex-charts" ></div>
                                                                     </div>
-                                                                    <!-- end container -->
-                                                            </div>
+                                                                </div>
+                                                            <!-- end col-->
+                                                        <div class="row">
+                                                            <div class="col-12">
+
+                                                                        <div class="row no-gutters">
+                                                                            <div class="col-sm-6 col-xl-3">
+                                                                                <div class="card shadow-none m-0">
+                                                                                    <div class="card-body text-center">
+                                                                                        <i class="mdi mdi-message-text-outline" style="font-size: 24px;"></i>
+                                                                                        <h3><span>298</span></h3>
+                                                                                        <p class="text-muted font-15 mb-0">Number of reviews</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-sm-6 col-xl-3">
+                                                                                <div class="card shadow-none m-0 ">
+                                                                                    <div class="card-body text-center">
+                                                                                        <i class="mdi mdi-star-half-full" style="font-size: 24px;"></i>
+                                                                                        <h3><span>4.3</span></h3>
+                                                                                        <p class="text-muted font-15 mb-0">Average rating</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-sm-6 col-xl-3">
+                                                                                <div class="card shadow-none m-0 ">
+                                                                                    <div class="card-body text-center">
+                                                                                        <i class="mdi mdi-star-outline" style="font-size: 24px;"></i>
+                                                                                        <h3><span class="badge bg-light text-dark">Features</span></h3>
+                                                                                        <p class="text-muted font-15 mb-0">Worst category</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-sm-6 col-xl-3">
+                                                                                <div class="card shadow-none m-0 ">
+                                                                                    <div class="card-body text-center">
+                                                                                        <i class="mdi mdi-star" style="font-size: 24px;"></i>
+                                                                                        <h3><span class="badge bg-danger text-light">Ambiance</span></h3>
+                                                                                        <p class="text-muted font-15 mb-0">Best category</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div> <!-- end row -->
+
+                                                                </div>
                                                         </div>
+                                                        <!-- end row-->
                                                     </div>
+
                                                     <div class="tab-pane show active" id="meals">
                                                         <p></p>
                                                     </div>
+
                                                     <div class="tab-pane" id="location">
                                                         <p></p>
                                                     </div>
+
                                                     <div class="tab-pane" id="service">
-                                                        <p></p>
+                                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <h4 class="header-title mb-2">Subcategories Trend</h4>
+                                                                <div id="category-service-line-chart" class="apex-charts" ></div>
+                                                            </div>
+                                                            <!-- end col-->
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12">
+
+                                                                        <div class="row no-gutters">
+                                                                            <div class="col-sm-6 col-xl-3">
+                                                                                <div class="card shadow-none m-0 ">
+                                                                                    <div class="card-body text-center">
+                                                                                        <i class="mdi mdi-message-text-outline" style="font-size: 24px;"></i>
+                                                                                        <h3><span>78</span></h3>
+                                                                                        <p class="text-muted font-15 mb-0">Number of reviews</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-sm-6 col-xl-3">
+                                                                                <div class="card shadow-none m-0 ">
+                                                                                    <div class="card-body text-center">
+                                                                                        <i class="mdi mdi-star-half-full" style="font-size: 24px;"></i>
+                                                                                        <h3><span>4.1</span></h3>
+                                                                                        <p class="text-muted font-15 mb-0">Average rating</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-sm-6 col-xl-3">
+                                                                                <div class="card shadow-none m-0 ">
+                                                                                    <div class="card-body text-center">
+                                                                                        <i class="mdi mdi-star-outline" style="font-size: 24px;"></i>
+                                                                                        <h3><span class="badge bg-info text-light">Speed/Waitingtime</span></h3>
+                                                                                        <p class="text-muted font-15 mb-0">Worst category</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-sm-6 col-xl-3">
+                                                                                <div class="card shadow-none m-0 ">
+                                                                                    <div class="card-body text-center">
+                                                                                        <i class="mdi mdi-star" style="font-size: 24px;"></i>
+                                                                                        <h3><span class="badge bg-primary text-light">Reception/Seating</span></h3>
+                                                                                        <p class="text-muted font-15 mb-0">Best category</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div> <!-- end row -->
+
+                                                            </div> <!-- end col-->
+                                                        </div>
+                                                        <!-- end row-->
                                                     </div>
                                                     <div class="tab-pane" id="ambiance">
                                                         <p></p>
@@ -770,6 +851,8 @@
         <!-- <script src="https://apexcharts.com/samples/assets/stock-prices.js"></script> -->
         <!-- <script src="https://apexcharts.com/samples/assets/irregular-data-series.js"></script> -->
         <script src="assets/js/pages/init.apexchart.js" defer></script>
+        <script src="assets/js/pages/categories-line-chart.js"></script>
+        <script src="assets/js/pages/category-service-line-chart.js"></script>
 
         <!-- Brite charts js -->
         <script src="assets/js/vendor/d3.min.js" defer></script>

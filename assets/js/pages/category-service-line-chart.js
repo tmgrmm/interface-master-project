@@ -1,27 +1,23 @@
 var options = {
     series: [{
-        name: "Meals",
-        data: [4, 4.2, 3.5, 3.4, 3.9, 4]
+        name: "Speed/Waitingtime",
+        data: [4, 4.2, 3.5, 3.4, 3.9, 3.4]
     },
         {
-            name: "Location",
+            name: "Friendliness",
             data: [4.5, 4.9, 4.5, 3.9, 4.2, 4.4]
         },
         {
-            name: 'Services',
-            data: [3, 2.7, 3.2, 3.6, 4.1, 3.6]
+            name: 'Language',
+            data: [3, 2.7, 3.2, 3.6, 4.1, 3.7]
         },
         {
-            name: "Ambiance",
-            data: [4.5, 5, 4.9, 4.4, 4.9, 4.8]
+            name: "Professionalism",
+            data: [4.5, 5, 4.9, 4.4, 4.1, 4.2]
         },
         {
-            name: "Price",
-            data: [4, 3.5, 3, 3.6, 4.1, 4.7]
-        },
-        {
-            name: 'Features',
-            data: [2, 2.5, 2.3, 2.7, 2, 2.4]
+            name: "Reception/Seating",
+            data: [4, 3.5, 4, 4.6, 4.5, 4.7]
         }
     ],
     chart: {toolbar: {
@@ -87,5 +83,5 @@ var options = {
     }
 };
 
-var chart = new ApexCharts(document.querySelector("#categories-line-chart"), options);
+var chart = new ApexCharts(document.querySelector("#category-service-line-chart"), options);
 chart.render();

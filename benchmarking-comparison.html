@@ -204,11 +204,18 @@
                                 <span class="menu-arrow"></span>
                             </a>
                             <ul class="side-nav-second-level mm-collapse" aria-expanded="false">
-                                <li>
-                                    <a href="benchmarking-internal.html">Overview</a>
-                                </li>
-                                <li>
-                                    <a href="benchmarking-comparison.html">Comparison</a>
+                                <li class="side-nav-item">
+                                    <a href="javascript: void(0);" aria-expanded="false">Internal
+                                        <span class="menu-arrow"></span>
+                                    </a>
+                                    <ul class="side-nav-third-level" aria-expanded="true">
+                                        <li>
+                                            <a href="benchmarking-internal.html">Overview</a>
+                                        </li>
+                                        <li>
+                                            <a href="benchmarking-comparison.html">Comparison</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="benchmarking-external.html">External</a>
@@ -559,6 +566,9 @@
                                         <h4 class="header-title mb-4">Review Distribution</h4>
                                         <div id="reviews-distribution-bonappetit" class="apex-charts"></div>
                                         <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                        <h4 class="header-title mb-4">Categories</h4>
+                                        <div id="radar-chart-categories" class="apex-charts"></div>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
 
 
 
@@ -623,6 +633,9 @@
                                         </div>
                                         <h4 class="header-title mb-4">Review Distribution</h4>
                                         <div id="reviews-distribution-cardinal" class="apex-charts"></div>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                        <h4 class="header-title mb-4">Categories</h4>
+                                        <div id="radar-chart-categories-cardinal" class="apex-charts"></div>
                                         <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
 
 
@@ -795,6 +808,9 @@
         <script src="assets/js/pages/response-rate-cardinal.js"></script>
         <script src="assets/js/pages/reviews-distribution-bonappetit.js"></script>
         <script src="assets/js/pages/reviews-distribution-cardinal.js"></script>
+        <script src="assets/js/pages/radar-chart-categories.js"></script>
+        <script src="assets/js/pages/radar-chart-categories-cardinal.js"></script>
+
 
 
 

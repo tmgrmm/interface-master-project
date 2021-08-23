@@ -13,11 +13,11 @@ window.Apex = {
 var options = {
     series: [{
         name: 'Average Rating',
-        data: [3.95, 4, 3.9, 3.8, 4, 3.75]
+        data: [3.95, 4, 4.5, 3.8, 4, 4.75]
         },
         {
             name: "Google",
-            data: [4.2, 4.8, 3.1, 3.8, 3.5, 2.9]
+            data: [4.2, 3.8, 4.1, 3.8, 4.5, 3.9]
         },
         {
             name: "TripAdvisor",
@@ -25,7 +25,7 @@ var options = {
         },
         {
             name: "Facebook",
-            data: [4.6, 4.1, 4.5, 4.8, 4.6, 4.3]
+            data: [4.6, 4.0, 4.2, 3.8, 3.7, 3.9]
         }],
     chart: { toolbar: {
             show: false
@@ -65,5 +65,5 @@ var options = {
 
 
 
-var chart = new ApexCharts(document.querySelector("#radar-chart-categories"), options);
+var chart = new ApexCharts(document.querySelector("#radar-chart-categories-cardinal"), options);
 chart.render();

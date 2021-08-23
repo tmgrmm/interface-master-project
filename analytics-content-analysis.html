@@ -204,8 +204,18 @@
                                 <span class="menu-arrow"></span>
                             </a>
                             <ul class="side-nav-second-level mm-collapse" aria-expanded="false">
-                                <li>
-                                    <a href="benchmarking-internal.html">Internal</a>
+                                <li class="side-nav-item">
+                                    <a href="javascript: void(0);" aria-expanded="false">Internal
+                                        <span class="menu-arrow"></span>
+                                    </a>
+                                    <ul class="side-nav-third-level" aria-expanded="true">
+                                        <li>
+                                            <a href="benchmarking-internal.html">Overview</a>
+                                        </li>
+                                        <li>
+                                            <a href="benchmarking-comparison.html">Comparison</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="benchmarking-external.html">External</a>
@@ -213,54 +223,6 @@
                             </ul>
                         </li>
 
-                      
-<!-- 
-                        <li class="side-nav-item">
-                            <a href="javascript: void(0);" class="side-nav-link" aria-expanded="false">
-                                <i class="mdi mdi-cog"></i>
-                                <span>Einstellungen</span>
-                                <span class="menu-arrow"></span>
-                            </a>
-                            <ul class="side-nav-second-level mm-collapse" aria-expanded="false">
-                                <li>
-                                    <a href="javascript: void(0);">Benutzer</a>
-                                </li>
-                            </ul>
-                        </li>
--->   
-<!--
-                        <li class="side-nav-item">
-                            <a href="javascript: void(0);" class="side-nav-link">
-                                <i class="mdi mdi-view-dashboard"></i>
-                                <span>Admin</span>
-                                <span class="menu-arrow"></span>
-                            </a>
-                            <ul class="side-nav-second-level mm-collapse" aria-expanded="false">
-                                <li>
-                                    <a href="javascript: void(0);">Benutzer</a>
-                                </li>
-                                <li>
-                                    <a href="javascript: void(0);">Gruppen</a>
-                                </li>
-                                <li>
-                                    <a href="javascript: void(0);">Eigenschaften</a>
-                                </li>
-                                <li>
-                                    <a href="javascript: void(0);">Reviewanswer</a>
-                                </li>
-                                <li>
-                                    <a href="javascript: void(0);">Review</a>
-                                </li>
-                                <li>
-                                    <a href="javascript: void(0);">Plattform</a>
-                                </li>
-                                <li>
-                                    <a href="javascript: void(0);">Classify</a>
-                                </li>
-                            </ul>
-                        </li>
-
---->
                         <li class="side-nav-item">
                             <a href="javascript: void(0);" class="side-nav-link" aria-expanded="false">
                                 <i class="uil uil-share-alt"></i>
@@ -501,7 +463,7 @@
 
 
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-6">
                                 <div class="card">
                                     <div class="card-body">
                                         <h4 class="header-title mb-4">Categories Rating </h4>
@@ -512,6 +474,121 @@
                                 <!-- end card -->
                             </div>
                             <!-- end col-->
+
+<!--
+                                <div class="col-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="header-title mb-4">Categories Analysis </h4>
+                                            <div class="table-responsive">
+                                                <table class="table table-sm table-centered mb-0 font-14">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Category</th>
+                                                        <th>Rating</th>
+                                                        <th>Reviews</th>
+                                                        <th style="width: 30%;">Distribution</th>
+                                                        <th>Positive</th>
+                                                        <th>Neutral</th>
+                                                        <th>Negative</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>Service</td>
+                                                        <td>3.6</td>
+                                                        <td>78</td>
+                                                        <td>
+                                                            <div class="progress progress-xl">
+                                                                <div class="progress-bar bg-success" role="progressbar" style="width: 50.1%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">50%</div> <div class="progress-bar bg-warning" role="progressbar" style="width: 33%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">33%</div> <div class="progress-bar bg-danger" role="progressbar" style="width: 16.9%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">17%</div>
+                                                            </div>
+                                                        </td>
+                                                        <td>39</td>
+                                                        <td>26</td>
+                                                        <td>13</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Location</td>
+                                                        <td>4.4</td>
+                                                        <td>78</td>
+                                                        <td>
+                                                            <div class="progress progress-xl">
+                                                                <div class="progress-bar bg-success" role="progressbar" style="width: 50.1%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">50%</div> <div class="progress-bar bg-warning" role="progressbar" style="width: 33%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">33%</div> <div class="progress-bar bg-danger" role="progressbar" style="width: 16.9%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">17%</div>
+                                                            </div>
+                                                        </td>
+                                                        <td>39</td>
+                                                        <td>26</td>
+                                                        <td>13</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Meals</td>
+                                                        <td>4.0</td>
+                                                        <td>78</td>
+                                                        <td>
+                                                            <div class="progress progress-xl">
+                                                                <div class="progress-bar bg-success" role="progressbar" style="width: 50.1%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">50%</div> <div class="progress-bar bg-warning" role="progressbar" style="width: 33%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">33%</div> <div class="progress-bar bg-danger" role="progressbar" style="width: 16.9%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">17%</div>
+                                                            </div>
+                                                        </td>
+                                                        <td>39</td>
+                                                        <td>26</td>
+                                                        <td>13</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Ambiance</td>
+                                                        <td>4.8</td>
+                                                        <td>78</td>
+                                                        <td>
+                                                            <div class="progress progress-xl">
+                                                                <div class="progress-bar bg-success" role="progressbar" style="width: 50.1%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">50%</div> <div class="progress-bar bg-warning" role="progressbar" style="width: 33%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">33%</div> <div class="progress-bar bg-danger" role="progressbar" style="width: 16.9%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">17%</div>
+                                                            </div>
+                                                        </td>
+                                                        <td>39</td>
+                                                        <td>26</td>
+                                                        <td>13</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Price</td>
+                                                        <td>4.7</td>
+                                                        <td>78</td>
+                                                        <td>
+                                                            <div class="progress progress-xl">
+                                                                <div class="progress-bar bg-success" role="progressbar" style="width: 50.1%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">50%</div> <div class="progress-bar bg-warning" role="progressbar" style="width: 33%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">33%</div> <div class="progress-bar bg-danger" role="progressbar" style="width: 16.9%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">17%</div>
+                                                            </div>
+                                                        </td>
+                                                        <td>39</td>
+                                                        <td>26</td>
+                                                        <td>13</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Features</td>
+                                                        <td>2.4</td>
+                                                        <td>78</td>
+                                                        <td>
+                                                            <div class="progress progress-xl">
+                                                                <div class="progress-bar bg-success" role="progressbar" style="width: 50.1%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">50%</div> <div class="progress-bar bg-warning" role="progressbar" style="width: 33%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">33%</div> <div class="progress-bar bg-danger" role="progressbar" style="width: 16.9%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">17%</div>
+                                                            </div>
+                                                        </td>
+                                                        <td>39</td>
+                                                        <td>26</td>
+                                                        <td>13</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                -->
+
+
+
+
+
+
+
+
 
 
                             <!--
@@ -526,8 +603,8 @@
 
                                     </div>
                                 </div>
-                            </div>
-                    -->
+                            </div> -->
+
 
 
 
@@ -537,13 +614,13 @@
                                         <h4 class="header-title mb-4">Categories Trend </h4>
                                         <div id="categories-line-chart" class="apex-charts" ></div>
                                     </div>
-                                        <!-- end card body-->
+
                                 </div>
-                                    <!-- end card -->
+
                             </div>
-                                <!-- end col-->
+
                         </div>
-                        <!-- end row-->
+
 
                         <div class="row">
                             <div class="col-lg-12">
@@ -557,8 +634,17 @@
                                                         <a class="custom-accordion-title d-block py-1"
                                                            data-toggle="collapse" href="#collapseFour"
                                                            aria-expanded="true" aria-controls="collapseFour">
-                                                            Services <i
-                                                                class="mdi mdi-chevron-down accordion-arrow"></i>
+                                                            Services &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-weight:normal"> 3.6 </span>
+                                                            <i class="mdi mdi-star text-warning"
+                                                                            style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-star text-warning"
+                                                               style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-star text-warning"
+                                                               style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-star-half-full text-warning"
+                                                               style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-star-outline text-warning"
+                                                               style="font-size: 1rem;"></i> <i class="mdi mdi-chevron-down accordion-arrow"></i>
                                                         </a>
                                                     </h5>
                                                 </div>
@@ -576,7 +662,7 @@
                                                                                 </a>
                                                                             </li>
                                                                             <li class="nav-item">
-                                                                                <a href="#Speed/Waitingtime" data-toggle="tab" aria-expanded="true" class="nav-link py-2">
+                                                                                <a href="#SpeedWaitingtime" data-toggle="tab" aria-expanded="true" class="nav-link py-2">
                                                                                     Speed/Waitingtime
                                                                                 </a>
                                                                             </li>
@@ -592,7 +678,7 @@
                                                                             </li>
                                                                             <li class="nav-item">
                                                                                 <a href="#Professionallism" data-toggle="tab" aria-expanded="true" class="nav-link py-2">
-                                                                                    Professionallism
+                                                                                    Professionalism
                                                                                 </a>
                                                                             </li>
                                                                             <li class="nav-item">
@@ -605,15 +691,118 @@
 
                                                                         <div class="tab-content">
                                                                             <div class="tab-pane active" id="all">
+                                                                                <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
                                                                                 <div class="row">
-                                                                                    <div class="col-8">
-                                                                                        <div class="card" style="height: 793px">
-                                                                                            <div class="card-body">
-                                                                                                <h4 class="header-title mb-0">Reviews</h4>
+                                                                                    <div class="col-12">
+                                                                                                <h4 class="header-title mb-2">Overview </h4>
+                                                                                                <div class="table-responsive">
+                                                                                                    <table class="table table-sm table-centered mb-0 font-14">
+                                                                                                        <thead>
+                                                                                                        <tr>
+                                                                                                            <th>Category</th>
+                                                                                                            <th>Rating</th>
+                                                                                                            <th>Reviews</th>
+                                                                                                            <th style="width: 30%;">Distribution</th>
+                                                                                                            <th>Positive</th>
+                                                                                                            <th>Neutral</th>
+                                                                                                            <th>Negative</th>
+                                                                                                        </tr>
+                                                                                                        </thead>
+                                                                                                        <tbody>
+                                                                                                        <tr>
+                                                                                                            <td>All</td>
+                                                                                                            <td>3.6</td>
+                                                                                                            <td>78</td>
+                                                                                                            <td>
+                                                                                                                <div class="progress progress-xl">
+                                                                                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 50.1%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">50%</div> <div class="progress-bar bg-warning" role="progressbar" style="width: 33%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">33%</div> <div class="progress-bar bg-danger" role="progressbar" style="width: 16.9%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">17%</div>
+                                                                                                                </div>
+                                                                                                            </td>
+                                                                                                            <td>39</td>
+                                                                                                            <td>26</td>
+                                                                                                            <td>13</td>
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <td>Speed/Waitingtime</td>
+                                                                                                            <td>4.4</td>
+                                                                                                            <td>20</td>
+                                                                                                            <td>
+                                                                                                                <div class="progress progress-xl">
+                                                                                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 58%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">58%</div> <div class="progress-bar bg-warning" role="progressbar" style="width: 33%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">20%</div> <div class="progress-bar bg-danger" role="progressbar" style="width: 22%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">22%</div>
+                                                                                                                </div>
+                                                                                                            </td>
+                                                                                                            <td>11</td>
+                                                                                                            <td>4</td>
+                                                                                                            <td>5</td>
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <td>Friendliness</td>
+                                                                                                            <td>4.0</td>
+                                                                                                            <td>13</td>
+                                                                                                            <td>
+                                                                                                                <div class="progress progress-xl">
+                                                                                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">65%</div> <div class="progress-bar bg-warning" role="progressbar" style="width: 28%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">28%</div> <div class="progress-bar bg-danger" role="progressbar" style="width: 7%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">7%</div>
+                                                                                                                </div>
+                                                                                                            </td>
+                                                                                                            <td>7</td>
+                                                                                                            <td>5</td>
+                                                                                                            <td>1</td>
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <td>Language</td>
+                                                                                                            <td>4.8</td>
+                                                                                                            <td>12</td>
+                                                                                                            <td>
+                                                                                                                <div class="progress progress-xl">
+                                                                                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 50.1%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">50%</div> <div class="progress-bar bg-warning" role="progressbar" style="width: 33%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">33%</div> <div class="progress-bar bg-danger" role="progressbar" style="width: 16.9%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">17%</div>
+                                                                                                                </div>
+                                                                                                            </td>
+                                                                                                            <td>6</td>
+                                                                                                            <td>4</td>
+                                                                                                            <td>2</td>
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <td>Professionalism</td>
+                                                                                                            <td>4.7</td>
+                                                                                                            <td>8</td>
+                                                                                                            <td>
+                                                                                                                <div class="progress progress-xl">
+                                                                                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 71%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">71%</div> <div class="progress-bar bg-warning" role="progressbar" style="width: 9%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">9%</div> <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">20%</div>
+                                                                                                                </div>
+                                                                                                            </td>
+                                                                                                            <td>5</td>
+                                                                                                            <td>1</td>
+                                                                                                            <td>2</td>
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <td>Reception/Seating</td>
+                                                                                                            <td>2.4</td>
+                                                                                                            <td>5</td>
+                                                                                                            <td>
+                                                                                                                <div class="progress progress-xl">
+                                                                                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">40%</div> <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">20%</div> <div class="progress-bar bg-danger" role="progressbar" style="width: 40%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">40%</div>
+                                                                                                                </div>
+                                                                                                            </td>
+                                                                                                            <td>2</td>
+                                                                                                            <td>1</td>
+                                                                                                            <td>2</td>
+                                                                                                        </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
+                                                                                                </div> <!-- end table-responsive-->
+                                                                                    </div>
+                                                                                    <!-- end col-->
+
+                                                                                </div>
+                                                                                <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                                                                <div class="row">
+                                                                                    <div class="col-12">
+                                                                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                                                                                <h4 class="header-title mb-0">Review List</h4>
                                                                                                 <div class="row">
                                                                                                     <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
                                                                                                         <div class="table-responsive">
-                                                                                                            <table id="reviews-category-table" class="table dt-responsive nowrap w-100">
+                                                                                                            <table  class="table dt-responsive nowrap w-100">
                                                                                                                         <thead>
                                                                                                                         <tr>
                                                                                                                             <th class="all">Platform</th>
@@ -758,68 +947,15 @@
 
 
                                                                                                                         </tr>
-                                                                                                                        <tr>
-                                                                                                                            <td>
-                                                                                                                                <img class="platform-logo" src="assets/images/google.svg" alt="google logo" height="20" />
-                                                                                                                                <b class="platform-name font-10">Bon Appétit</b>
-                                                                                                                                <span class="platform-name font-10 d-block mt-1" >Schaffhausen</span>
-                                                                                                                            </td>
-                                                                                                                            <td>
-                                                                                                                                09.08.2021
-                                                                                                                            </td>
-                                                                                                                            <td>
-                                                                                                                                <div class="text-nowrap">
-                                                                                                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                                                                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                                                                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                                                                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                                                                                                    <i class="mdi mdi-star-half-full text-warning" style="font-size: 1.1rem;"></i>
-                                                                                                                                </div>
-                                                                                                                                <span>4.5</span>
-                                                                                                                            </td>
 
 
-                                                                                                                            <td>
-                                                                                                                                <i>Sandro</i>
-                                                                                                                                <b>A nice address!</b>
-                                                                                                                                <p>(+) Big dishes, plenty of taste, comfy ambiance (-) The showee drain didn't work well ao the bathroom flooded</p>
-                                                                                                                            </td>
-
-                                                                                                                        </tr>
-                                                                                                                        <tr>
-                                                                                                                            <td>
-                                                                                                                                <img class="platform-logo" src="assets/images/ta-logo.svg" alt="tripadvisor logo" height="20">
-                                                                                                                                <b class="platform-name font-10">Bon Appétit</b>
-                                                                                                                                <span class="platform-name font-10 d-block mt-1" >Schaffhausen</span>
-                                                                                                                            </td>
-                                                                                                                            <td>
-                                                                                                                                01.08.2021
-                                                                                                                            </td>
-                                                                                                                            <td>
-                                                                                                                                <div class="text-nowrap">
-                                                                                                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                                                                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                                                                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                                                                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                                                                                                    <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                                                                                                </div>
-                                                                                                                                <span>5.0</span>
-                                                                                                                            </td>
-                                                                                                                            <td>
-                                                                                                                                <i>Anonym</i>
-                                                                                                                                <b>Hotel 2B ist 1A!</b>
-                                                                                                                                <p>(+) Tolle Zimmerausstattung, man fühlt sich wie zuhause.</p>
-                                                                                                                            </td>
-
-                                                                                                                        </tr>
                                                                                                                         </tbody>
                                                                                                             </table>
                                                                                                         </div>
                                                                                                 </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
 
+                                                                                    </div>
+<!--
                                                                                     <div class="col-lg-4">
                                                                                         <div class="card">
                                                                                             <div class="card-body">
@@ -847,19 +983,132 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <!-- end card body-->
+
                                                                                         </div>
-                                                                                        <!-- end card -->
+
                                                                                     </div>
-                                                                                    <!-- end col-->
+                                                                                    end col-->
 
 
                                                                                 </div>
 
                                                                             </div>
 
-                                                                            <div class="tab-pane show active" id="Speed/Waitingtime">
-                                                                                <p></p>
+                                                                            <div class="tab-pane" id="SpeedWaitingtime">
+                                                                                <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                                                                <div class="row">
+                                                                                    <div class="col-12">
+                                                                                        <h4 class="header-title mb-2">Overview </h4>
+                                                                                        <div class="table-responsive">
+                                                                                            <table class="table table-sm table-centered mb-0 font-14">
+                                                                                                <thead>
+                                                                                                <tr>
+                                                                                                    <th>Category</th>
+                                                                                                    <th>Rating</th>
+                                                                                                    <th>Reviews</th>
+                                                                                                    <th style="width: 30%;">Distribution</th>
+                                                                                                    <th>Positive</th>
+                                                                                                    <th>Neutral</th>
+                                                                                                    <th>Negative</th>
+                                                                                                </tr>
+                                                                                                </thead>
+                                                                                                <tbody>
+                                                                                                <tr>
+                                                                                                    <td>Speed/Waitingtime</td>
+                                                                                                    <td>4.4</td>
+                                                                                                    <td>20</td>
+                                                                                                    <td>
+                                                                                                        <div class="progress progress-xl">
+                                                                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 58%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">58%</div> <div class="progress-bar bg-warning" role="progressbar" style="width: 33%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">20%</div> <div class="progress-bar bg-danger" role="progressbar" style="width: 22%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">22%</div>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                    <td>11</td>
+                                                                                                    <td>4</td>
+                                                                                                    <td>5</td>
+                                                                                                </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div> <!-- end table-responsive-->
+                                                                                    </div>
+                                                                                    <!-- end col-->
+
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-12">
+                                                                                        <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
+                                                                                        <h4 class="header-title mb-2">Review List</h4>
+                                                                                        <div class="table-responsive">
+                                                                                            <table  class="table dt-responsive nowrap w-100">
+                                                                                                <thead>
+                                                                                                <tr>
+                                                                                                    <th class="all">Platform</th>
+                                                                                                    <th>Date</th>
+                                                                                                    <th>Rating</th>
+                                                                                                    <th>Review</th>
+                                                                                                </tr>
+                                                                                                </thead>
+                                                                                                <tbody>
+                                                                                                <tr>
+                                                                                                    <td>
+                                                                                                        <img class="platform-logo" src="assets/images/ta-logo.svg" alt="tripadvisor logo" height="20">
+                                                                                                        <b class="platform-name font-10">Bon Appétit</b>
+                                                                                                        <span class="platform-name font-10 d-block mt-1" >Schaffhausen</span>
+                                                                                                    </td>
+                                                                                                    <td>
+                                                                                                        09.08.2021
+                                                                                                    </td>
+                                                                                                    <td>
+                                                                                                        <div class="text-nowrap">
+                                                                                                            <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
+                                                                                                            <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
+                                                                                                            <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
+                                                                                                            <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
+                                                                                                            <i class="mdi mdi-star-half-full text-warning" style="font-size: 1.1rem;"></i>
+                                                                                                        </div>
+                                                                                                        <span>4.5</span>
+                                                                                                    </td>
+                                                                                                    <td>
+                                                                                                        <i>Anonym</i>
+                                                                                                        <b>Hotel 2B ist 1A!</b>
+                                                                                                        <p>(+) Tolle Zimmerausstattung, man fühlt sich wie zuhause.</p>
+                                                                                                    </td>
+
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>
+                                                                                                        <img class="platform-logo" src="assets/images/google.svg" alt="google logo" height="20" />
+                                                                                                        <b class="platform-name font-10">Bon Appétit</b>
+                                                                                                        <span class="platform-name font-10 d-block mt-1" >Schaffhausen</span>
+                                                                                                    </td>
+                                                                                                    <td>
+                                                                                                        03.08.2021
+                                                                                                    </td>
+                                                                                                    <td>
+                                                                                                        <div class="text-nowrap">
+                                                                                                            <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
+                                                                                                            <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
+                                                                                                            <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
+                                                                                                            <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
+                                                                                                            <i class="mdi mdi-star-half-full text-warning" style="font-size: 1.1rem;"></i>
+                                                                                                        </div>
+                                                                                                        <span>4.5</span>
+                                                                                                    </td>
+
+
+                                                                                                    <td>
+                                                                                                        <i>Sandro</i>
+                                                                                                        <b>Very nice!</b>
+                                                                                                        <p>(+) Big rooms, plenty of storage, comfy beds (-) The showee drain didn't work well ao the bathroom flooded</p>
+                                                                                                    </td>
+
+
+                                                                                                </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                        </div>
+
+                                                                                    </div>
                                                                             </div>
                                                                             <div class="tab-pane" id="Friendliness">
                                                                                 <p>...</p>
@@ -891,8 +1140,17 @@
                                                         <a class="custom-accordion-title collapsed d-block py-1"
                                                            data-toggle="collapse" href="#collapseFive"
                                                            aria-expanded="false" aria-controls="collapseFive">
-                                                            Location <i
-                                                                class="mdi mdi-chevron-down accordion-arrow"></i>
+                                                            Location &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-weight:normal"> 4.4 </span>
+                                                            <i class="mdi mdi-star text-warning"
+                                                               style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-star text-warning"
+                                                               style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-star text-warning"
+                                                               style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-star text-warning"
+                                                               style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-star-half-full text-warning"
+                                                               style="font-size: 1rem;"></i> <i class="mdi mdi-chevron-down accordion-arrow"></i>
                                                         </a>
                                                     </h5>
                                                 </div>
@@ -912,8 +1170,17 @@
                                                         <a class="custom-accordion-title collapsed d-block py-1"
                                                            data-toggle="collapse" href="#collapseSix"
                                                            aria-expanded="false" aria-controls="collapseSix">
-                                                            Meals <i
-                                                                class="mdi mdi-chevron-down accordion-arrow"></i>
+                                                            Meals &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-weight:normal" > 4.0 </span>
+                                                            <i class="mdi mdi-star text-warning"
+                                                               style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-star text-warning"
+                                                               style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-star text-warning"
+                                                               style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-star text-warning"
+                                                               style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-star-outline text-warning"
+                                                               style="font-size: 1rem;"></i> <i class="mdi mdi-chevron-down accordion-arrow"></i>
                                                         </a>
                                                     </h5>
                                                 </div>
@@ -931,8 +1198,17 @@
                                                         <a class="custom-accordion-title collapsed d-block py-1"
                                                            data-toggle="collapse" href="#collapseSeven"
                                                            aria-expanded="false" aria-controls="collapseSeven">
-                                                            Ambiance <i
-                                                                class="mdi mdi-chevron-down accordion-arrow"></i>
+                                                            Ambiance   &nbsp;&nbsp; &nbsp;<span style="font-weight:normal" > 4.8 </span>
+                                                            <i class="mdi mdi-star text-warning"
+                                                               style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-star text-warning"
+                                                               style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-star text-warning"
+                                                               style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-star text-warning"
+                                                               style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-star text-warning"
+                                                               style="font-size: 1rem;"></i> <i class="mdi mdi-chevron-down accordion-arrow"></i>
                                                         </a>
                                                     </h5>
                                                 </div>
@@ -951,8 +1227,18 @@
                                                         <a class="custom-accordion-title collapsed d-block py-1"
                                                            data-toggle="collapse" href="#collapseEight"
                                                            aria-expanded="false" aria-controls="collapseEight">
-                                                            Price <i
-                                                                class="mdi mdi-chevron-down accordion-arrow"></i>
+                                                            Price &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<span style="font-weight:normal" > 4.7 </span>
+                                                            <i class="mdi mdi-star text-warning"
+                                                               style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-star text-warning"
+                                                               style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-star text-warning"
+                                                               style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-star text-warning"
+                                                               style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-star-half-full text-warning"
+                                                               style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-chevron-down accordion-arrow"></i>
                                                         </a>
                                                     </h5>
                                                 </div>
@@ -971,8 +1257,18 @@
                                                         <a class="custom-accordion-title collapsed d-block py-1"
                                                            data-toggle="collapse" href="#collapseFeatures"
                                                            aria-expanded="false" aria-controls="collapseFeatures">
-                                                            Features <i
-                                                                class="mdi mdi-chevron-down accordion-arrow"></i>
+                                                            Features &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span style="font-weight:normal" > 2.4 </span>
+                                                            <i class="mdi mdi-star text-warning"
+                                                               style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-star text-warning"
+                                                               style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-star-half-full text-warning"
+                                                               style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-star-outline text-warning"
+                                                               style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-star-outline text-warning"
+                                                               style="font-size: 1rem;"></i>
+                                                            <i class="mdi mdi-chevron-down accordion-arrow"></i>
                                                         </a>
                                                     </h5>
                                                 </div>
@@ -994,7 +1290,10 @@
                         
                     </div> <!-- container -->
 
+                        </div>
+
                 </div> <!-- content -->
+
 
                 <!-- Footer Start -->
                 <footer class="footer">
