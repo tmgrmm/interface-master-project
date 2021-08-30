@@ -589,7 +589,26 @@
                                                                         <div class="row">
                                                                             <div class="btn-group">
                                                                                 <!-- Success Alert Modal -->
-                                                                                <a href="to-do-published.html" class="button btn btn-info">publish answer</a>
+                                                                                <a href="to-do-published.html" class="button btn btn-info">publish</a>
+                                                                                <div id="success-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                                                                                    <div class="modal-dialog modal-sm">
+                                                                                        <div class="modal-content modal-filled bg-success">
+                                                                                            <div class="modal-body p-4">
+                                                                                                <div class="text-center">
+                                                                                                    <i class="dripicons-checkmark h1"></i>
+                                                                                                    <h4 class="mt-2">Response Published!</h4>
+                                                                                                    <p class="mt-3">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                                                                                                    <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal">Continue</button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div><!-- /.modal-content -->
+                                                                                    </div><!-- /.modal-dialog -->
+                                                                                </div><!-- /.modal -->
+                                                                            </div>
+                                                                            <div>&nbsp;&nbsp;</div>
+                                                                            <div class="btn-group">
+                                                                                <!-- Success Alert Modal -->
+                                                                                <a href="#" class="button btn btn-secondary">decline</a>
                                                                                 <div id="success-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
                                                                                     <div class="modal-dialog modal-sm">
                                                                                         <div class="modal-content modal-filled bg-success">
@@ -730,7 +749,7 @@
                                                         </ul>
                                                         <div class="row">
                                                             <div class="col-12" >
-                                                                <div class="mt-2 bg-light p-3 rounded">
+                                                                <div class="mt-0 bg-light p-3 rounded">
                                                                     <form class="needs-validation" novalidate="" name="chat-form" id="chat-form">
                                                                         <div class="row">
                                                                             <div class="col-1" align="center">
@@ -799,10 +818,10 @@
                                                             </td>
                                                             <td>
                                                                 <div class="text-nowrap">
-                                                                    <span>2.0  </span>
+                                                                    <span>2.5  </span>
                                                                     <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
                                                                     <i class="mdi mdi-star text-warning" style="font-size: 1.1rem;"></i>
-                                                                    <i class="mdi mdi-star-outline text-warning" style="font-size: 1.1rem;"></i>
+                                                                    <i class="mdi mdi-star-half-full text-warning" style="font-size: 1.1rem;"></i>
                                                                     <i class="mdi mdi-star-outline text-warning" style="font-size: 1.1rem;"></i>
                                                                     <i class="mdi mdi-star-outline text-warning" style="font-size: 1.1rem;"></i>
                                                                 </div>
@@ -811,7 +830,7 @@
                                                                 <span>ENG</span>
                                                             </td>
                                                             <td class="table-action" style="width: 90px;" align="right">
-                                                                <span class="badge badge-success-lighten">Re:sponded</span>
+                                                                <span class="badge badge-warning-lighten">Unanswered</span>
                                                             </td>
 
                                                             </td>
@@ -825,32 +844,59 @@
                                                         <span><b><i>Nick:</i></b></span>
                                                     </div>
                                                     <div class="col-lg-11 col-md-12 col-sm-12 col-xs-12">
-                                                        <span>We went here without a reservation. Of course we can understand that without reservation is not possible to have a place but is not needed to shout potential customers.
-                                                            Learn some welcome skills, not all is instant money in this life.</span>
+                                                        <span>Wir waren heute um 12:45 im Bon Appéttit angekommen und bekamen zugleich ein Tisch für 2 Personen. Der Mittag hat gut gestartet, jedoch wollten wir um ca. 13:00 unser Essen bestellen und das Lunch Menü zu einem guten Preis war bereits ausverkauft. Sehr schade! Mussten dann etwas à la Carte essen (mit einem Preisunterschied von 20.-!). Bessere Organisation und Planung würde dem Restaurant sicher gut tun. </span>
                                                     </div>
                                                 </div>
+
+                                                <div class="col-md-3 col-sm-3 col-xs-3">&nbsp;</div>
                                                 <div class="row">
                                                     <div class="col-12" >
-                                                        <div class="mt-2 bg-light p-3 rounded">
-                                                            <form class="needs-validation" novalidate="" name="chat-form" id="chat-form">
-                                                                <div class="row">
-                                                                    <div class="col-lg-1 col-md-12 col-sm-12 col-xs-12" align="left">
-                                                                        <img class="tiny-logo" src="assets/images/re_logo_32x24.svg" alt="re" height="35" class="img-thumbnail" >
-                                                                        <i style = font-size:12px>02.07.21</i>
+                                                        <ul class="conversation-list" data-simplebar style="max-height: 537px">
+                                                            <li class="clearfix">
+                                                                <div class="chat-avatar">
+                                                                    <img src="assets/images/users/avatar-5.jpg" class="rounded" alt="Shreyu N" />
+                                                                    <i style = font-size:12px>Markus</i>
+                                                                </div>
+                                                                <div class="conversation-text">
+                                                                    <div class="ctext-wrap">
+                                                                        <i>COMMENT, 02.07.2021</i>
+                                                                        <p>
+                                                                           Ciao Alex, bitte klär das mit dem Team in der Küche ab, ob das wirklich so war an diesem Tag. Sobald du mehr dazu weisst, lass es mich bitte wissen. LG Markus
+                                                                        </p>
                                                                     </div>
-                                                                    <div class="col-lg-11 col-md-12 col-sm-12 col-xs-12">
+                                                                </div>
+                                                            </li>
+
+                                                        </ul>
+                                                        <div class="row">
+                                                            <div class="col-12" >
+                                                                <div class="mt-0 bg-light p-3 rounded">
+                                                                    <form class="needs-validation" novalidate="" name="chat-form" id="chat-form">
                                                                         <div class="row">
-                                                                            <i><b>Published Response</b> on <b>02.07.2021</b>:</i>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <p>Dear Christian, Very sorry that my staff behaved so unbecoming. On their behalf, I apologise. Sorry again! Best wishes</p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div> <!-- end row-->
-                                                            </form>
+                                                                            <div class="col-1" align="center">
+                                                                                <img src="assets/images/users/avatar-1.jpg" alt="dominic" height="30" class="rounded" />
+                                                                            </div>
+
+                                                                            <div class="col mb-2 mb-sm-0">
+                                                                                <input type="text" class="form-control border-0" placeholder="Enter your comment for Markus" required="">
+                                                                                <div class="invalid-feedback">
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-sm-auto">
+                                                                                <div class="btn-group">
+                                                                                    <button type="submit" class="btn btn-info chat-send btn-block">comment</button>
+                                                                                </div>
+                                                                            </div> <!-- end col -->
+                                                                        </div> <!-- end row-->
+                                                                    </form>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </div>
+
                                             </div>
 
 
@@ -920,11 +966,6 @@
                     <h5 class="mt-2">Color Scheme</h5>
                     <hr class="mt-1" />
 
-                    <div class="custom-control custom-switch mb-1">
-                        <input type="radio" class="custom-control-input" name="color-scheme-mode" value="light"
-                            id="light-mode-check" checked />
-                        <label class="custom-control-label" for="light-mode-check">Light Mode</label>
-                    </div>
 
                     <div class="custom-control custom-switch mb-1">
                         <input type="radio" class="custom-control-input" name="color-scheme-mode" value="dark"
@@ -933,25 +974,6 @@
                     </div>
 
 
-                    <!-- Left Sidebar-->
-                    <h5 class="mt-2">Left Sidebar</h5>
-                    <hr class="mt-1" />
-                    <div class="custom-control custom-switch mb-1">
-                        <input type="radio" class="custom-control-input" name="theme" value="default" id="default-check"
-                            checked />
-                        <label class="custom-control-label" for="default-check">Default</label>
-                    </div>
-
-                    <div class="custom-control custom-switch mb-1">
-                        <input type="radio" class="custom-control-input" name="theme" value="light" id="light-check" />
-                        <label class="custom-control-label" for="light-check">Light</label>
-                    </div>
-
-                    <div class="custom-control custom-switch mb-3">
-                        <input type="radio" class="custom-control-input" name="theme" value="dark" id="dark-check" />
-                        <label class="custom-control-label" for="dark-check">Dark</label>
-                    </div>
-                    <button class="btn btn-info btn-block mt-1" id="resetBtn">Reset to Default</button>
 
                     <h5 class="mt-3">Venues</h5>
                     <hr class="mt-1" />

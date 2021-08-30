@@ -58,6 +58,7 @@
      */
     LeftSidebar.prototype.activateDefaultTheme = function () {
         this._reset();
+        this.body.attr('data-leftbar-theme', 'info');
     },
     
     /**
@@ -417,7 +418,7 @@ function ($) {
     'use strict';
 
     // Layout and theme manager
-    var SIDEBAR_THEME_DEFAULT = 'default';
+    var SIDEBAR_THEME_DEFAULT = 'dark';
     var SIDEBAR_THEME_LIGHT = 'light';
     var SIDEBAR_THEME_DARK = 'dark';
 

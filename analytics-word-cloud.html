@@ -470,26 +470,37 @@
                                             <a class="btn btn-secondary dropdown-toggle mr-2" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 All Platforms
                                             </a>
-                                            
+
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" href="#">All Platforms</a>
                                                 <a class="dropdown-item" href="#">TripAdvisor</a>
                                                 <a class="dropdown-item" href="#">Facebook</a>
                                                 <a class="dropdown-item" href="#">Google</a>
                                             </div>
                                         </div>
+                                        <div class="dropdown">
+                                            <a class="btn btn-secondary dropdown-toggle mr-2" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Medium
+                                            </a>
+
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" href="#">Small</a>
+                                                <a class="dropdown-item" href="#">Medium</a>
+                                                <a class="dropdown-item" href="#">Large</a>
+                                            </div>
+                                        </div>
                                         <form class="form-inline">
                                             <div class="form-group">
+
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control form-control-light" id="dash-daterange">
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text bg-info border-primary text-white">
-                                                            <i class="mdi mdi-calendar-range font-13"></i>
-                                                        </span>
+                                                    <div id="reportrange" class="form-control form-control-light" data-toggle="date-picker-range" data-target-display="#selectedValue"  data-cancel-class="btn-danger">
+                                                        <i class="mdi mdi-calendar"></i>&nbsp;
+                                                        <span id="selectedValue"></span> <i class="mdi mdi-menu-down"></i>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="javascript: void(0);" class="btn btn-info ml-2">
-                                                <i class="mdi mdi-autorenew"></i>
+                                            <a href="analytics-trend-analysis.html" class="btn btn-info ml-2">
+                                                <i class="mdi mdi-filter-remove"></i>
                                             </a>
                                         </form>
                                     </div>
@@ -668,79 +679,34 @@
             <div class="rightbar-content h-100" data-simplebar>
 
                 <div class="p-3">
-                    <div class="alert alert-warning" role="alert">
-                        <strong>Customize </strong> the overall color scheme, sidebar menu, etc.
-                    </div>
 
                     <!-- Settings -->
-                    <h5 class="mt-3">Color Scheme</h5>
+                    <h5 class="mt-2">Color Scheme</h5>
                     <hr class="mt-1" />
 
-                    <div class="custom-control custom-switch mb-1">
-                        <input type="radio" class="custom-control-input" name="color-scheme-mode" value="light"
-                            id="light-mode-check" checked />
-                        <label class="custom-control-label" for="light-mode-check">Light Mode</label>
-                    </div>
 
                     <div class="custom-control custom-switch mb-1">
                         <input type="radio" class="custom-control-input" name="color-scheme-mode" value="dark"
-                            id="dark-mode-check" />
+                               id="dark-mode-check" />
                         <label class="custom-control-label" for="dark-mode-check">Dark Mode</label>
                     </div>
 
-                    <!-- Width -->
-                    <h5 class="mt-4">Width</h5>
+
+
+                    <h5 class="mt-3">Venues</h5>
                     <hr class="mt-1" />
-                    <div class="custom-control custom-switch mb-1">
-                        <input type="radio" class="custom-control-input" name="width" value="fluid" id="fluid-check" checked />
-                        <label class="custom-control-label" for="fluid-check">Fluid</label>
-                    </div>
-                    <div class="custom-control custom-switch mb-1">
-                        <input type="radio" class="custom-control-input" name="width" value="boxed" id="boxed-check" />
-                        <label class="custom-control-label" for="boxed-check">Boxed</label>
-                    </div>
+                    <button class="btn btn-info btn-block mt-1" >Add Venue</button>
 
-                    <!-- Left Sidebar-->
-                    <h5 class="mt-4">Left Sidebar</h5>
+                    <h5 class="mt-3">Data Sources</h5>
                     <hr class="mt-1" />
-                    <div class="custom-control custom-switch mb-1">
-                        <input type="radio" class="custom-control-input" name="theme" value="default" id="default-check"
-                            checked />
-                        <label class="custom-control-label" for="default-check">Default</label>
-                    </div>
+                    <button class="btn btn-info btn-block mt-1" >Add Data Source</button>
 
-                    <div class="custom-control custom-switch mb-1">
-                        <input type="radio" class="custom-control-input" name="theme" value="light" id="light-check" />
-                        <label class="custom-control-label" for="light-check">Light</label>
-                    </div>
+                    <h5 class="mt-3">Language</h5>
+                    <hr class="mt-1" />
+                    <button class="btn btn-info btn-block mt-1" >Change Language</button>
 
-                    <div class="custom-control custom-switch mb-3">
-                        <input type="radio" class="custom-control-input" name="theme" value="dark" id="dark-check" />
-                        <label class="custom-control-label" for="dark-check">Dark</label>
-                    </div>
 
-                    <div class="custom-control custom-switch mb-1">
-                        <input type="radio" class="custom-control-input" name="compact" value="fixed" id="fixed-check"
-                            checked />
-                        <label class="custom-control-label" for="fixed-check">Fixed</label>
-                    </div>
 
-                    <div class="custom-control custom-switch mb-1">
-                        <input type="radio" class="custom-control-input" name="compact" value="condensed"
-                            id="condensed-check" />
-                        <label class="custom-control-label" for="condensed-check">Condensed</label>
-                    </div>
-
-                    <div class="custom-control custom-switch mb-1">
-                        <input type="radio" class="custom-control-input" name="compact" value="scrollable"
-                            id="scrollable-check" />
-                        <label class="custom-control-label" for="scrollable-check">Scrollable</label>
-                    </div>
-
-                    <button class="btn btn-primary btn-block mt-4" id="resetBtn">Reset to Default</button>
-
-                    <a href="https://themes.getbootstrap.com/product/hyper-responsive-admin-dashboard-template/"
-                        class="btn btn-danger btn-block mt-3" target="_blank"><i class="mdi mdi-basket mr-1"></i> Purchase Now</a>
                 </div> <!-- end padding-->
 
             </div>
@@ -796,22 +762,29 @@
                 "service"
             ];
             var words = [
-                {text: "Dessert", weight: 13},
+                {text: "dessert", weight: 13, color: '#ffbc00'},
                 {text: "delivery", weight: 20},
                 {text: "take-away", weight: 25},
-                {text: "take-away", weight: 10},
-                {text: "take-away", weight: 20},
-                {text: "take-away", weight: 24},
-                {text: "take-away", weight: 25},
-                {text: "take-away", weight: 26},
-                {text: "take-away", weight: 10},
-                {text: "take-away", weight: 9.4},
-                {text: "take-away", weight: 3},
-                {text: "take-away", weight: 20},
-                {text: "take-away", weight: 21},
-                {text: "take-away", weight: 22},
-                {text: "take-away", weight: 23},
-                {text: "take-away", weight: 35},
+                {text: "ratatouille", weight: 31,color: '#0acf97'},
+                {text: "tiramisu", weight: 20},
+                {text: "service", weight: 24},
+                {text: "ambience", weight: 25},
+                {text: "vegan", weight: 26},
+                {text: "wine", weight: 10, color: '#0acf97'},
+                {text: "design", weight: 9.4},
+                {text: "chef de service", weight: 3},
+                {text: "price", weight: 20},
+                {text: "parking", weight: 21, color: '#fa5c7c'},
+                {text: "vegetarian", weight: 22},
+                {text: "beer", weight: 23},
+                {text: "city center", weight: 21, color: '#0acf97'},
+                {text: "cocktails", weight: 35, color: '#fa5c7c'},
+                {text: "appetizer", weight: 20},
+                {text: "french", weight: 21},
+                {text: "pasta", weight: 2},
+                {text: "lunch", weight: 23},
+                {text: "tiramisu", weight: 35},
+
 
 
                 /* ... */
@@ -820,7 +793,7 @@
             for (var i=0; i<list.length; i++)
                 word_list.push({text:list[i], weight:(Math.random() * 4 + 10)})
             $(document).ready(function() {
-                $("#wordcloud").jQCloud(word_list,{colors: ['#fa5c7c','#0acf97','#ffbc00' ],});
+                $("#wordcloud").jQCloud(words,{colors: ['#0acf97','#fa5c7c','#ffbc00' ],});
             });
         </script>
         <style type="text/css">
