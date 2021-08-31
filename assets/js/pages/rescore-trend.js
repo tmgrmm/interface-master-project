@@ -2,7 +2,9 @@ var options = {
     series: [{
         name: "re:Score",
         data: [78.5, 84.5, 81.5, 80, 84.5, 84]
-    }],
+    },
+
+    ],
     chart: {
         toolbar: {
             show: false
